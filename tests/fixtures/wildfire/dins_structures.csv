@@ -1,0 +1,7 @@
+incident_name,incident_num,incident_start,county,zip_reported,damage,structure_category,zcta,lat,lon
+River,CANEU 020628,2021-08-04,Nevada,95945,Destroyed (>50%),Single Residence,95945,39.08,-121.0
+River,CANEU 020628,2021-08-04,Nevada,95945,Major (25-50%),Single Residence,95945,39.08,-121.01
+River,CANEU 020628,2021-08-04,Placer,95713,Destroyed (>50%),Single Residence,95713,39.07,-120.99
+River,CANEU 020628,2021-08-04,Placer,,Destroyed (>50%),Other Minor Structure,,,
+River,CANEU 020628,2021-08-04,Nevada,95949,Minor (10-25%),Single Residence,95949,39.09,-121.02
+Tiny,CANEU 000001,2019-06-01,Nevada,95949,Affected (>0-10%),Single Residence,95949,39.1,-121.1

@@ -1,0 +1,44 @@
+{
+  "calfire_incidents.csv": {
+    "url": "https://incidents.fire.ca.gov/imapdata/mapdataall.csv",
+    "retrieved_at": "2026-10-05T23:30:45+00:00",
+    "sha256": "a88d8b5276777a739bd03154a3d3cf524d377307bd4143cfd9c726495567b295",
+    "size": 23835,
+    "license_note": "CAL FIRE: Creative Commons Attribution (data.ca.gov listing); rows in region counties or >= 50,000 acres"
+  },
+  "cdi_s2_fire_risk.csv": {
+    "url": "https://www.insurance.ca.gov/01-consumers/200-wrr/upload/Residential-Property-Coverage-Amounts-Wildfire-Risk-and-Losses.xlsx",
+    "retrieved_at": "2026-10-05T23:15:42+00:00",
+    "sha256": "0121607496638272bef690665a7bd3e287aeefd6ca0a74ed061163b66f00fde2",
+    "size": 118636,
+    "license_note": "CDI: public domain unless otherwise indicated (insurance.ca.gov privacy policy, Ownership); Fire Risk Scores slice for region ZIPs, extracted from xlsx sha256 1db226b44fbcccae99afff2f6732dae6f656913425d17930df5ff93e7237cf70"
+  },
+  "dins_structures.csv": {
+    "url": "https://services1.arcgis.com/jUJYIo9tSA7EHvfZ/arcgis/rest/services/POSTFIRE_MASTER_DATA_SHARE/FeatureServer/0",
+    "retrieved_at": "2026-10-05T23:26:22+00:00",
+    "sha256": "bfb1798b3bafd8c0d5a4c7179e645f430d0aa0e0d301bdc26012ea76d62c3c64",
+    "size": 61144,
+    "license_note": "CAL FIRE: Creative Commons Attribution (data.ca.gov listing); region counties, DAMAGE <> 'No Damage', addresses dropped"
+  },
+  "zcta_adjacency.csv": {
+    "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/PUMA_TAD_TAZ_UGA_ZCTA/MapServer/7 (Census 2020 ZCTA layer)",
+    "retrieved_at": "2026-10-05T23:33:20+00:00",
+    "sha256": "bb9b3e7c2934b0d7e34cd6e86cae8dac6801560802923743ae4187dcba6eebb6",
+    "size": 4046,
+    "license_note": "US Census Bureau: public domain; spatialRel=esriSpatialRelTouches per ZCTA polygon"
+  },
+  "zcta_attributes.csv": {
+    "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/PUMA_TAD_TAZ_UGA_ZCTA/MapServer/7 (Census 2020 ZCTA layer)",
+    "retrieved_at": "2026-10-05T23:33:20+00:00",
+    "sha256": "32420ab6b4ff89bcec41e08b376b1feab8bd629ff051fef9c488c02f41425d40",
+    "size": 1702,
+    "license_note": "US Census Bureau: public domain; HU100, POP100, AREALAND per ZCTA"
+  },
+  "zcta_county_region.csv": {
+    "url": "https://www2.census.gov/geo/docs/maps-data/data/rel2020/zcta520/tab20_zcta520_county20_natl.txt",
+    "retrieved_at": "2026-10-05T23:15:22+00:00",
+    "sha256": "2ecd2e3be46e243883139702d8fcd49185e51a9e95165dc3c9704d5e7a7d001d",
+    "size": 1314,
+    "license_note": "US Census Bureau: public domain; rows for counties 06057 06061 06091 06115 only"
+  }
+}

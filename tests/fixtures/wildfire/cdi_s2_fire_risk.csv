@@ -1,0 +1,9 @@
+year,policy_form,zip,county,avg_fire_risk,count_n,count_l,count_m,count_h,count_e,earned_exposure
+2018,HO,95945,Nevada,3.0,0,0,10,20,10,45
+2018,DO,95945,Nevada,1.0,5,5,0,0,0,12
+2018,FP,95945,Nevada,4.0,0,0,0,0,100,100
+2023,HO,95945,Nevada,3.5,0,0,0,10,10,22
+2018,HO,95949,Nevada,2.0,0,10,0,0,0,10
+2018,HO,95712,Nevada,3.0,0,0,0,4,0,4
+2018,HO,95602,Placer,2.5,0,0,8,0,0,9
+2023,HO,95602,Placer,,0,0,0,0,0,9
