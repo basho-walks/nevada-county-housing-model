@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Population and home prices in Grass Valley and Nevada City</title>
+  <meta name="description" content="A statistical model of how Nevada County, California population growth changes home values in Grass Valley and Nevada City.">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply a saved theme before first paint so the page does not flash.
+    const saved = localStorage.getItem("theme");
+    if (saved) document.documentElement.dataset.theme = saved;
+  </script>
+</head>
+<body class="viz-root">
+  <header class="masthead">
+    <div class="wrap">
+      <div class="topline">
+        <p class="eyebrow">Nevada County, California · Housing model</p>
+        <button id="theme-toggle" class="ghost" type="button" aria-label="Switch color theme">Theme</button>
+      </div>
+      <h1>When more people move to Nevada County, what happens to home prices in Grass Valley and Nevada City?</h1>
+      <p class="lede">
+        This model uses 24 years of data from California counties to measure how population growth changes home values.
+        It then applies that result to the two cities. All dollar values are in <span data-bind="base_year"></span> dollars, adjusted for inflation.
+      </p>
+      <div class="tiles" id="tiles"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="explorer" aria-labelledby="explorer-title">
+      <h2 id="explorer-title">Try a population path</h2>
+      <p class="section-lede">
+        Pick a yearly growth rate for the county population. The chart shows the typical home value if only population changes and everything else stays at its
+        <span data-bind="base_year"></span> level. It is not a market forecast. Mortgage rates, incomes and the wider economy will also move prices.
+      </p>
+      <div class="controls" role="group" aria-label="Scenario settings">
+        <label class="control slider">
+          <span class="control-label">County population growth per year</span>
+          <span class="slider-row">
+            <input id="growth" type="range" min="-1" max="3" step="0.1" value="0.4" list="growth-presets" aria-describedby="growth-out">
+            <output id="growth-out" for="growth"></output>
+          </span>
+          <datalist id="growth-presets">
+            <option value="-0.5" label="Decline"></option>
+            <option value="0.4" label="Trend"></option>
+            <option value="1" label="Growth"></option>
+            <option value="2" label="Fast"></option>
+          </datalist>
+        </label>
+        <div class="control">
+          <span class="control-label">Presets</span>
+          <div class="segmented" id="presets"></div>
+        </div>
+        <div class="control">
+          <span class="control-label">Estimate</span>
+          <div class="segmented" id="model-choice" role="radiogroup" aria-label="Estimate"></div>
+        </div>
+      </div>
+      <div class="readouts" id="readouts" aria-live="polite"></div>
+      <div class="multiples" id="explorer-charts"></div>
+      <details class="table-view"><summary>Show scenario table</summary><div id="explorer-table"></div></details>
+    </section>
+
+    <section aria-labelledby="history-title">
+      <h2 id="history-title">25 years of population and prices</h2>
+      <p class="section-lede">
+        Population grew slowly and steadily. Home values swung much more, with the 2000s housing bubble, the 2008 crash and the pandemic jump in 2020-2021.
+        Population growth is one cause among several, which is why the model needs data from many counties to measure it.
+      </p>
+      <div class="card"><div id="history-chart" class="chart"></div></div>
+      <details class="table-view"><summary>Show history table</summary><div id="history-table"></div></details>
+    </section>
+
+    <section aria-labelledby="counties-title">
+      <h2 id="counties-title">Across California, faster-growing counties saw bigger price gains</h2>
+      <p class="section-lede" id="counties-lede"></p>
+      <div class="card"><div id="counties-chart" class="chart"></div></div>
+      <details class="table-view"><summary>Show county table</summary><div id="counties-table"></div></details>
+    </section>
+
+    <section aria-labelledby="impulse-title">
+      <h2 id="impulse-title">Prices keep rising for a few years after people arrive</h2>
+      <p class="section-lede">
+        Home prices have momentum. A price rise this year tends to bring more rise next year. So a one-time 1% increase in population
+        lifts prices a little at first, then more over the next three to four years, until the effect levels off.
+      </p>
+      <div class="card"><div id="impulse-chart" class="chart"></div></div>
+      <details class="table-view"><summary>Show response table</summary><div id="impulse-table"></div></details>
+    </section>
+
+    <section aria-labelledby="method-title" class="method">
+      <h2 id="method-title">How the model works</h2>
+      <ol>
+        <li>
+          <strong>Population effect across California.</strong>
+          <span id="method-panel"></span>
+          County effects remove fixed local differences. Year effects remove things that hit every county at once, such as mortgage rates and recessions.
+        </li>
+        <li>
+          <strong>County to city.</strong>
+          Each city's Zillow Home Value Index is compared with the Nevada County price index for 2002-<span data-bind="base_year"></span>.
+          <span id="method-pass"></span>
+        </li>
+        <li>
+          <strong>Scenarios.</strong>
+          A constant yearly population growth rate runs through the fitted model for <span data-bind="horizon"></span> years.
+          The shaded range shows 90% of 10,000 simulations that vary the estimated coefficients.
+        </li>
+      </ol>
+
+      <h3>Two estimates, and why they differ</h3>
+      <p>
+        Population and prices affect each other. People move toward jobs and amenities, and high prices push some people away.
+        The <em>same-year</em> estimate uses this year's population growth and can overstate the effect.
+        The <em>lagged</em> estimate uses last year's population growth, which this year's prices cannot have caused. It is the cautious estimate.
+        The real effect is probably between the two.
+      </p>
+      <div class="coef-tables" id="coef-tables"></div>
+
+      <h3>Limits</h3>
+      <ul>
+        <li>The model treats a population decline as the mirror image of growth. In practice, declines often hit prices harder, because existing homes do not go away.</li>
+        <li>Census has no corrected 2010-2020 county population series. The model spreads the gap between the 2010s estimates and the 2020 Census over 2011-2019.</li>
+        <li>Zillow city values cover all home types at the middle of the market. Individual neighborhoods and home types can move differently.</li>
+      </ul>
+
+      <h3>Sources</h3>
+      <ul>
+        <li>Home prices: FHFA all-transactions house price index by county, and the Zillow Home Value Index for each city.</li>
+        <li>Population: U.S. Census Bureau county population estimates.</li>
+        <li>Income and building permits: Bureau of Economic Analysis and Census Bureau, through FRED.</li>
+        <li>Inflation: Consumer Price Index for all urban consumers (CPI-U).</li>
+      </ul>
+      <p>Code, data and full results: <a href="https://github.com/basho-walks/nevada-county-housing-model">github.com/basho-walks/nevada-county-housing-model</a>.</p>
+    </section>
+  </main>
+
+  <div id="tooltip" class="tooltip" role="status" hidden></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
