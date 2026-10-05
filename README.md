@@ -37,5 +37,30 @@ python3 -m http.server -d site 8000   # preview the website at http://localhost:
 
 Pushing changes under `site/` to `main` deploys the website through GitHub Actions.
 
+## ZIP panel
+
+The insurance extension uses a ZCTA-by-year panel. `model.py` does not read it.
+
+```sh
+uv run python build_panel.py   # reads data/ only, no network
+uv run pytest -q tests/test_panel.py
+```
+
+The build writes:
+
+- `data/panel_zip_year.csv`: one row per `(zcta, year)` for every target, region and Bay Area
+  spillover-source ZCTA. Insurance columns are pivoted by policy form (`admitted_homeowners__*`,
+  `dwelling_fire__*`, `fair_plan__*`). Gaps stay empty, with a `*_missing` code and a
+  `*_missing_reason` text column. `complete_case = 1` selects the complete-case sensitivity subset.
+- `data/panel_manifest.json`: the panel version (schema, git sha and input-file hash), the SHA-256
+  of every input and raw manifest, and the timing class of every column.
+- `docs/panel_audit.md`: observation counts, join losses, missingness by ZCTA, year and source,
+  reconciliation with county totals, and the jump flags.
+- The `panel` rows of `docs/data_dictionary.csv`.
+
+The inputs come from `ingest/insurance.py`, `ingest/housing.py` and `ingest/wildfire.py`. Rebuild
+them first when their sources change. Restricted FAIR Plan files stay in `data/raw/restricted/`,
+which is not committed.
+
 Sources: FRED (FHFA HPI, BEA per-capita income, Census building permits, 30-year mortgage rate,
 CPI-U), Census population estimates, Zillow ZHVI (mid-tier, all homes, smoothed, seasonally adjusted).
