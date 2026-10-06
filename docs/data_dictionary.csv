@@ -94,13 +94,48 @@ acs_zcta,median_value_real,float,USD of BASE_YEAR,S13 and S16 CPIAUCSL,ZCTA 2020
 acs_zcta,population,float,persons (5-year average),S13 B01003,ZCTA 2020,observed or crosswalked,acs_missing
 acs_zcta,population_moe,float,persons,S13 B01003,ZCTA 2020,observed or crosswalked,acs_missing
 acs_zcta,housing_units,float,housing units (5-year average),S13 B25001,ZCTA 2020,observed or crosswalked,acs_missing
-wildfire_zcta_year,zcta,string,5-digit code,ingest/keys.py,ZCTA 2020,key,none
-wildfire_zcta_year,year,integer,calendar year,fire perimeters (to be inventoried),ZCTA 2020,key,none
-wildfire_zcta_year,policy_form,string,ALL,none,ZCTA 2020,key,none
-wildfire_zcta_year,avg_fire_risk,float,0-4 scale,S2 Fire Risk Scores,ZCTA 2020,crosswalked,risk_missing
-wildfire_zcta_year,burned_area_share,float,share of ZCTA land area,fire perimeters (to be inventoried),ZCTA 2020,derived,fire_missing
-wildfire_zcta_year,fire_within_km,float,km to nearest perimeter,fire perimeters (to be inventoried),ZCTA 2020,derived,fire_missing
-wildfire_zcta_year,moratorium,integer,0 or 1,CDI moratorium lists (to be inventoried),ZCTA 2020,crosswalked,moratorium_missing
+wildfire_zip,zcta,string,5-digit code,S14 2020 ZCTA-to-county file,ZCTA 2020,key,none
+wildfire_zip,geo_tier,string,core fringe excluded_east or region,docs/schema.md section 2,ZCTA 2020,derived,none
+wildfire_zip,county_fips_main,string,5-digit FIPS,S14 (largest land share),ZCTA 2020,derived,none
+wildfire_zip,hu2020,integer,housing units,2020 Census via TIGERweb HU100,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2018,float,0-4 scale,S2 Fire Risk Scores,ZCTA 2020,observed,cdi_risk_missing
+wildfire_zip,cdi_avg_fire_risk_2018_source,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2018_vintage,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2018_aggregation_method,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2018_pretreatment,integer,0 or 1,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2018,float,share 0-1,S2 Fire Risk Scores,ZCTA 2020,observed,cdi_risk_missing
+wildfire_zip,cdi_high_extreme_share_2018_source,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2018_vintage,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2018_aggregation_method,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2018_pretreatment,integer,0 or 1,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2023,float,0-4 scale,S2 Fire Risk Scores,ZCTA 2020,observed,cdi_risk_missing
+wildfire_zip,cdi_avg_fire_risk_2023_source,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2023_vintage,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2023_aggregation_method,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2023_pretreatment,integer,0 or 1,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2023,float,share 0-1,S2 Fire Risk Scores,ZCTA 2020,observed,cdi_risk_missing
+wildfire_zip,cdi_high_extreme_share_2023_source,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2023_vintage,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2023_aggregation_method,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2023_pretreatment,integer,0 or 1,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_risk_missing,integer,0 or 1,S2 Fire Risk Scores,ZCTA 2020,derived,none
+wildfire_zip,burned,integer,0 or 1,CAL FIRE DINS and TIGERweb 2020 ZCTA point query,ZCTA 2020,derived,none
+wildfire_zip,burned_event_ids,string,event_register event_id list separated by ;,CAL FIRE DINS and TIGERweb 2020 ZCTA point query,ZCTA 2020,derived,none
+wildfire_zip,structures_destroyed,integer,structure count,CAL FIRE DINS and TIGERweb 2020 ZCTA point query,ZCTA 2020,observed,none
+wildfire_zip,structures_major_damage,integer,structure count,CAL FIRE DINS and TIGERweb 2020 ZCTA point query,ZCTA 2020,observed,none
+wildfire_zip,first_burn_date,string,ISO date,CAL FIRE DINS and TIGERweb 2020 ZCTA point query and CAL FIRE incident list,ZCTA 2020,derived,none
+wildfire_zip,spillover_candidate,integer,0 or 1,TIGERweb esriSpatialRelTouches on 2020 ZCTA polygons and DINS,ZCTA 2020,derived,none
+wildfire_zip,spillover_event_ids,string,event_register event_id list separated by ;,TIGERweb esriSpatialRelTouches on 2020 ZCTA polygons and DINS,ZCTA 2020,derived,none
+wildfire_zip,moratorium_event_ids,string,event_register event_id list separated by ;,CDI SB 824 moratorium bulletins,ZCTA 2020,derived,none
+event_register,event_id,string,text identifier,ingest/wildfire.py,event,key,none
+event_register,event_type,string,fire insurer_withdrawal nonrenewal_moratorium rule_change or fair_plan_change,CAL FIRE DINS and events_curated.csv,event,observed,none
+event_register,date_start,string,ISO date,CAL FIRE incident list DINS and cited sources,event,observed,none
+event_register,date_end,string,ISO date or blank,CAL FIRE incident list and cited sources,event,observed,none
+event_register,date_uncertainty,string,day week month quarter or year,events_curated.csv and ingest/wildfire.py,event,observed,none
+event_register,geography,string,text label,CAL FIRE DINS and cited sources,event,observed,none
+event_register,zctas_affected,string,2020 ZCTA list separated by ;,DINS point query or bulletin ZIPs by identity,ZCTA 2020,derived,none
+event_register,source_url,string,URL,CAL FIRE and CDI pages,event,observed,none
+event_register,notes,string,free text,ingest/wildfire.py and events_curated.csv,event,observed,none
 xw_zip_zcta,zip,string,5-digit USPS ZIP,S14 identity or S15 HUD,USPS ZIP,observed,none
 xw_zip_zcta,zcta,string,5-digit code,S14 or S15 HUD and tract-ZCTA file,ZCTA 2020,observed,none
 xw_zip_zcta,weight,float,residential address share 0-1,S15 RES_RATIO (1.0 for identity),USPS ZIP to ZCTA 2020,derived,xw_incomplete
@@ -123,7 +158,7 @@ panel,avg_premium_real,float,USD of BASE_YEAR per house-year,insurance_zip_year,
 panel,nonrenewal_rate,float,share 0-1,insurance_zip_year,ZCTA 2020,derived,counts_missing
 panel,series_break_2020,integer,0 or 1,insurance_zip_year,ZCTA 2020,derived,none
 panel,exposure_high_extreme_share,float,share 0-1,insurance_zip_year,ZCTA 2020,derived,risk_missing
-panel,avg_fire_risk,float,0-4 scale,wildfire_zcta_year,ZCTA 2020,crosswalked,risk_missing
+panel,avg_fire_risk,float,0-4 scale,wildfire_zip,ZCTA 2020,crosswalked,risk_missing
 panel,acs_population,float,persons (5-year average ending in year),acs_zcta,ZCTA 2020,observed or crosswalked,acs_missing
 panel,county_population,float,persons at 1 July,S17,county,county_control,county_missing
 panel,county_income_pc_real,float,USD of BASE_YEAR,S16 PCPI and CPIAUCSL,county,county_control,county_missing

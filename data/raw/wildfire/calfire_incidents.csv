@@ -1,0 +1,192 @@
+name,date_start,date_end,county,acres,lat,lon,url
+PFE Fire,2013-06-13,2013-06-13,Placer,237,38.729297,-121.380862,https://www.fire.ca.gov/incidents/2013/6/13/pfe-fire/
+McGanney Fire,2013-07-08,2013-07-08,Yuba,73,39.206,-121.31634,https://www.fire.ca.gov/incidents/2013/7/8/mcganney-fire/
+American Fire,2013-08-10,2013-08-30,Placer,27440,39.12,-120.65,https://www.fire.ca.gov/incidents/2013/8/10/american-fire/
+Rim Fire,2013-08-17,2013-09-06,Tuolumne,257314,37.857,-120.086,https://www.fire.ca.gov/incidents/2013/8/17/rim-fire/
+Tyler Fire,2013-08-31,2013-08-31,Nevada,52,39.333401,-121.107022,https://www.fire.ca.gov/incidents/2013/8/31/tyler-fire/
+Hutto Fire,2014-07-07,2014-07-08,Nevada,38,39.1871,-121.2687,https://www.fire.ca.gov/incidents/2014/7/7/hutto-fire/
+Boca Fire,2014-08-18,2014-08-19,Nevada,84,39.3918,-120.0805,https://www.fire.ca.gov/incidents/2014/8/18/boca-fire/
+Dog Bar Fire,2014-09-13,2014-09-18,Nevada,247,39.113682,-120.999508,https://www.fire.ca.gov/incidents/2014/9/13/dog-bar-fire/
+King Fire,2014-09-13,2014-10-09,El Dorado,97717,38.805437,-120.629714,https://www.fire.ca.gov/incidents/2014/9/13/king-fire/
+Cook Fire,2015-06-18,2015-06-22,Yuba,158,39.2688,-121.26471,https://www.fire.ca.gov/incidents/2015/6/18/cook-fire/
+Baxter Fire,2015-07-22,2015-07-22,Placer,26,38.9361,-121.1548,https://www.fire.ca.gov/incidents/2015/7/22/baxter-fire/
+Lowell Fire,2015-07-25,2015-08-12,Nevada,2304,39.192088,-120.882313,https://www.fire.ca.gov/incidents/2015/7/25/lowell-fire/
+Rocky Fire,2015-07-29,2015-08-14,Lake,69636,38.8863538,-122.4762475,https://www.fire.ca.gov/incidents/2015/7/29/rocky-fire/
+Rough Fire,2015-07-31,2015-11-09,Fresno,151623,36.874,-118.905,https://www.fire.ca.gov/incidents/2015/7/31/rough-fire/
+Francis Fire,2015-08-03,2015-08-05,Yuba,30,39.33303,-121.18735,https://www.fire.ca.gov/incidents/2015/8/3/francis-fire/
+Butte Fire,2015-09-09,2015-10-15,Butte,70868,38.32974,-120.70418,https://www.fire.ca.gov/incidents/2015/9/9/butte-fire/
+McCourtney Fire,2015-09-22,2015-09-21,Nevada,30,39.081,-121.194,https://www.fire.ca.gov/incidents/2015/9/22/mccourtney-fire/
+Athens Fire,2016-05-17,2016-05-19,Placer,169,38.8390117,-121.3090268,https://www.fire.ca.gov/incidents/2016/5/17/athens-fire/
+Moore Fire,2016-06-21,2016-06-21,Placer,88,38.86804,-121.37704,https://www.fire.ca.gov/incidents/2016/6/21/moore-fire/
+Trailhead Fire,2016-06-28,2016-07-18,"El Dorado, Placer",5645,38.96741,-120.9375,https://www.fire.ca.gov/incidents/2016/6/28/trailhead-fire/
+Soberanes Fire,2016-07-22,2016-10-13,Monterey,132127,36.45994,-121.89938,https://www.fire.ca.gov/incidents/2016/7/22/soberanes-fire/
+Beale Fire,2016-08-18,2016-08-18,Yuba,389,36.16965,-121.38775,https://www.fire.ca.gov/incidents/2016/8/18/beale-fire/
+Phoenix Fire,2016-09-07,2016-09-08,Nevada,38,39.39051,-120.51887,https://www.fire.ca.gov/incidents/2016/9/7/phoenix-fire/
+Auburn Fire,2016-09-17,2016-09-20,Nevada,47,39.20427,-121.05948,https://www.fire.ca.gov/incidents/2016/9/17/auburn-fire/
+Twenty Fire,2017-05-29,2018-01-09,Yuba,10,39.23205,-121.376,https://www.fire.ca.gov/incidents/2017/5/29/twenty-fire/
+Evans Fire,2017-06-19,2018-01-09,Sierra,168,39.71101,-120.02325,https://www.fire.ca.gov/incidents/2017/6/19/evans-fire/
+Brewer Fire,2017-07-02,2018-01-09,Nevada,10,39.08382,-121.06656,https://www.fire.ca.gov/incidents/2017/7/2/brewer-fire/
+West Fire,2017-07-08,2018-01-09,Yuba,50,39.06308,-121.303,https://www.fire.ca.gov/incidents/2017/7/8/west-fire/
+Farad Fire,2017-07-10,2018-01-09,Sierra,747,39.439722,-120.027222,https://www.fire.ca.gov/incidents/2017/7/10/farad-fire/
+Long Valley Fire,2017-07-11,2018-01-09,Lassen,83733,40.07045,-120.14013,https://www.fire.ca.gov/incidents/2017/7/11/long-valley-fire/
+Chetco Fire,2017-07-12,2018-01-09,,191125,42.29896,-123.95405,https://www.fire.ca.gov/incidents/2017/7/12/chetco-fire/
+Detwiler Fire,2017-07-16,2018-01-09,Mariposa,81826,37.61757,-120.21321,https://www.fire.ca.gov/incidents/2017/7/16/detwiler-fire/
+Grizzly Fire,2017-07-21,2018-01-09,Nevada,10,39.36902,-120.97586,https://www.fire.ca.gov/incidents/2017/7/21/grizzly-fire/
+Spenceville Fire,2017-07-24,2018-01-09,Yuba,39,39.06522,-121.3519,https://www.fire.ca.gov/incidents/2017/7/24/spenceville-fire/
+Greenhorn Fire,2017-07-27,2018-01-09,Nevada,15,39.16826,-120.95498,https://www.fire.ca.gov/incidents/2017/7/27/greenhorn-fire/
+Eclipse Complex,2017-08-15,2018-01-09,Siskiyou,78698,41.841,-123.474,https://www.fire.ca.gov/incidents/2017/8/15/eclipse-complex/
+Beale Fire,2017-08-20,2018-01-09,Yuba,867,39.1234,-121.32957,https://www.fire.ca.gov/incidents/2017/8/20/beale-fire/
+Pleasant Fire,2017-08-30,2018-01-09,Nevada,392,39.34292,-121.12004,https://www.fire.ca.gov/incidents/2017/8/30/pleasant-fire/
+Jasper Fire,2017-09-26,2018-01-09,Yuba,26,39.03168,-121.40947,https://www.fire.ca.gov/incidents/2017/9/26/jasper-fire/
+Cascade Fire (Wind Complex),2017-10-08,2018-02-09,Yuba,9989,39.32198,-121.4021,https://www.fire.ca.gov/incidents/2017/10/8/cascade-fire-wind-complex/
+Lobo Fire (Wind Complex),2017-10-08,2018-02-09,Nevada,821,39.24549,-121.12792,https://www.fire.ca.gov/incidents/2017/10/8/lobo-fire-wind-complex/
+Atlas Fire (Southern LNU Complex),2017-10-09,2018-02-09,"Napa, Solano",51624,38.39206,-122.24367,https://www.fire.ca.gov/incidents/2017/10/9/atlas-fire-southern-lnu-complex/
+McCourtney Fire (Wind Complex),2017-10-09,2018-02-09,Nevada,76,39.19325,-121.08406,https://www.fire.ca.gov/incidents/2017/10/9/mccourtney-fire-wind-complex/
+Garden Fire,2017-10-10,2018-01-09,Nevada,19,39.06414,-121.13737,https://www.fire.ca.gov/incidents/2017/10/10/garden-fire/
+Thomas Fire,2017-12-04,2018-01-12,"Santa Barbara, Ventura",281893,34.41521,-119.09124,https://www.fire.ca.gov/incidents/2017/12/4/thomas-fire/
+County Fire,2018-06-30,2019-01-04,"Napa, Yolo",90000,38.80583,-122.18183,https://www.fire.ca.gov/incidents/2018/6/30/county-fire/
+Ferguson Fire,2018-07-13,2019-01-04,Mariposa,96901,37.6549,-119.88581,https://www.fire.ca.gov/incidents/2018/7/13/ferguson-fire/
+Carr Fire,2018-07-23,2018-08-30,"Shasta, Trinity",229651,40.65428,-122.62357,https://www.fire.ca.gov/incidents/2018/7/23/carr-fire/
+Ranch Fire (Mendocino Complex),2018-07-27,2019-01-04,"Colusa, Mendocino, Glenn, Lake",410203,39.243283,-123.103367,https://www.fire.ca.gov/incidents/2018/7/27/ranch-fire-mendocino-complex/
+Sunset Fire,2018-08-01,2019-01-04,Placer,695,38.82426,-121.451307,https://www.fire.ca.gov/incidents/2018/8/1/sunset-fire/
+Oak Fire,2018-08-12,2019-01-04,Nevada,16,39.10494,-121.07039,https://www.fire.ca.gov/incidents/2018/8/12/oak-fire/
+North Fire,2018-09-03,2019-01-04,Placer,1120,39.268611,-120.658333,https://www.fire.ca.gov/incidents/2018/9/3/north-fire/
+Delta Fire,2018-09-05,2019-01-04,"Shasta, Trinity",63311,40.9425,-122.43,https://www.fire.ca.gov/incidents/2018/9/5/delta-fire/
+Camp Fire,2018-11-08,2018-11-25,Butte,153336,39.8134,-121.4347,https://www.fire.ca.gov/incidents/2018/11/8/camp-fire/
+Woolsey Fire,2018-11-08,2019-01-04,"Los Angeles, Ventura",96949,34.235,-118.70128,https://www.fire.ca.gov/incidents/2018/11/8/woolsey-fire/
+Sugar Fire,2019-05-10,2019-05-24,Placer,65,39.11536,-120.76088,https://www.fire.ca.gov/incidents/2019/5/10/sugar-fire/
+Watt Fire,2019-06-07,2019-06-11,Placer,27,38.75263,-121.39259,https://www.fire.ca.gov/incidents/2019/6/7/watt-fire/
+Levee Fire,2019-06-08,2019-06-17,Yuba,70,39.15641,-121.56363,https://www.fire.ca.gov/incidents/2019/6/8/levee-fire/
+Scott Fire,2019-06-24,2019-06-24,Yuba,80,39.24678,-121.32399,https://www.fire.ca.gov/incidents/2019/6/24/scott-fire/
+Scott Fire,2019-06-25,2019-06-25,Yuba,80,39.24678,-121.32399,https://www.fire.ca.gov/incidents/2019/6/25/scott-fire/
+Dyer Fire,2019-06-26,2019-06-27,Placer,148,38.73817,-121.39419,https://www.fire.ca.gov/incidents/2019/6/26/dyer-fire/
+Long Fire,2019-06-28,2019-06-28,Nevada,2,39.40972222,-121.00055556,https://www.fire.ca.gov/incidents/2019/6/28/long-fire/
+Far Fire,2019-07-06,,Yuba,38,39.06066,-121.35014,https://www.fire.ca.gov/incidents/2019/7/6/far-fire/
+Jasper Fire,2019-07-13,2019-07-16,State of Nevada,1165,39.631945,-119.769881,https://www.fire.ca.gov/incidents/2019/7/13/jasper-fire/
+Walker Fire,2019-09-04,,Plumas,54612,40.061389,-120.680556,https://www.fire.ca.gov/incidents/2019/9/4/walker-fire/
+Baseline Fire,2019-09-20,,Placer,640,38.751648,-121.432636,https://www.fire.ca.gov/incidents/2019/9/20/baseline-fire/
+Kincade Fire,2019-10-23,2019-11-06,Sonoma,77758,38.792458,-122.780053,https://www.fire.ca.gov/incidents/2019/10/23/kincade-fire/
+Foothills Fire,2019-11-25,,Placer,308,38.838992,-121.325842,https://www.fire.ca.gov/incidents/2019/11/25/foothills-fire/
+Antelope Fire,2020-02-17,2020-02-20,Sierra,102,39.6923001,-120.3291855,https://www.fire.ca.gov/incidents/2020/2/17/antelope-fire/
+Baker Fire,2020-03-03,,Yuba,,39.45493,-121.12381,https://www.fire.ca.gov/incidents/2020/3/3/baker-fire/
+Amoruso Fire,2020-06-01,,Placer,670,38.824371,-121.390862,https://www.fire.ca.gov/incidents/2020/6/1/amoruso-fire/
+Karchner Fire,2020-06-05,2020-06-05,Placer,39,38.98487,-121.340239,https://www.fire.ca.gov/incidents/2020/6/5/karchner-fire/
+Watt Fire,2020-06-11,2020-06-11,Placer,40,38.733421,-121.378879,https://www.fire.ca.gov/incidents/2020/6/11/watt-fire/
+Nelson Fire,2020-06-18,2020-06-18,Placer,110,38.89178,-121.33956,https://www.fire.ca.gov/incidents/2020/6/18/nelson-fire/
+Poeville Fire,2020-06-27,2020-07-06,State of Nevada,2975,39.32596,-119.81098,https://www.fire.ca.gov/incidents/2020/6/27/poeville-fire/
+Valley Fire,2020-07-15,2020-07-15,Yuba,500,39.10112,-121.33589,https://www.fire.ca.gov/incidents/2020/7/15/valley-fire/
+July Complex,2020-07-24,2020-08-20,"Siskiyou, Modoc",83261,41.699,-121.477,https://www.fire.ca.gov/incidents/2020/7/24/july-complex/
+Beale Fire,2020-08-02,2020-08-03,Yuba,600,39.11307,-121.38178,https://www.fire.ca.gov/incidents/2020/8/2/beale-fire/
+Duluth Fire,2020-08-10,2020-08-11,Placer,65,38.81111,-121.318472,https://www.fire.ca.gov/incidents/2020/8/10/duluth-fire/
+Feather Fire,2020-08-13,,Sierra,,39.716713,-120.889438,https://www.fire.ca.gov/incidents/2020/8/13/feather-fire/
+Loyalton Fire,2020-08-14,2020-08-26,Sierra,47029,39.702438,-120.143473,https://www.fire.ca.gov/incidents/2020/8/14/loyalton-fire/
+August Complex (includes Doe Fire),2020-08-16,2020-11-11,"Mendocino, Humboldt, Trinity, Tehama, Glenn, Lake, Colusa",1032648,39.776,-122.673,https://www.fire.ca.gov/incidents/2020/8/16/august-complex-includes-doe-fire/
+CZU Lightning Complex (Including Warnella Fire),2020-08-16,2020-09-22,"Santa Cruz, San Mateo",86509,37.17162,-122.22275,https://www.fire.ca.gov/incidents/2020/8/16/czu-lightning-complex-including-warnella-fire/
+SCU Lightning Complex,2020-08-16,2020-10-01,"Santa Clara, San Joaquin, Contra Costa, Alameda, Stanislaus",396624,37.439437,-121.30435,https://www.fire.ca.gov/incidents/2020/8/16/scu-lightning-complex/
+Jones Fire,2020-08-17,2020-08-28,Nevada,705,39.29241,-121.100352,https://www.fire.ca.gov/incidents/2020/8/17/jones-fire/
+LNU Lightning Complex,2020-08-17,2020-10-02,"Napa, Solano, Lake, Sonoma, Yolo",363220,38.48193,-122.14864,https://www.fire.ca.gov/incidents/2020/8/17/lnu-lightning-complex/
+Perry Fire,2020-08-26,,Placer,9,38.8825,-121.10411,https://www.fire.ca.gov/incidents/2020/8/26/perry-fire/
+Creek Fire,2020-09-04,,"Fresno, Madera",379895,37.19147,-119.261175,https://www.fire.ca.gov/incidents/2020/9/4/creek-fire/
+Willow Fire,2020-09-09,2020-09-14,Yuba,1311,39.3637,-121.32361,https://www.fire.ca.gov/incidents/2020/9/9/willow-fire/
+Glass Fire,2020-09-27,2020-10-20,"Napa, Sonoma",67484,38.56295,-122.49745,https://www.fire.ca.gov/incidents/2020/9/27/glass-fire/
+Zogg Fire,2020-09-27,2020-10-13,"Shasta, Tehama",56338,40.53927,-122.56656,https://www.fire.ca.gov/incidents/2020/9/27/zogg-fire/
+Fields Fire,2020-10-07,2020-10-07,Yuba,56,39.181047,-121.450982,https://www.fire.ca.gov/incidents/2020/10/7/fields-fire/
+Point Fire (Placer County),2020-10-26,2020-11-09,Placer,,39.009454,-120.488892,https://www.fire.ca.gov/incidents/2020/10/26/point-fire-placer-county/
+Quail Fire,2021-05-12,2021-05-12,Yuba,35,39.2510745,-121.361339,https://www.fire.ca.gov/incidents/2021/5/12/quail-fire/
+Intanko Fire,2021-06-08,,Yuba,939,39.084872,-121.333346,https://www.fire.ca.gov/incidents/2021/6/8/intanko-fire/
+Beale Fire,2021-06-13,2021-06-14,Yuba,150,39.1956433,-121.3587065,https://www.fire.ca.gov/incidents/2021/6/13/beale-fire/
+Watt Fire,2021-06-21,2021-06-21,Placer,42,38.728881,-121.39247,https://www.fire.ca.gov/incidents/2021/6/21/watt-fire/
+Beckwourth Complex,2021-07-04,2021-09-22,Plumas,105670,39.83203,-120.3415,https://www.fire.ca.gov/incidents/2021/7/4/beckwourth-complex/
+Tamarack Fire,2021-07-04,2021-10-25,Alpine,68637,38.6280042,-119.8591887,https://www.fire.ca.gov/incidents/2021/7/4/tamarack-fire/
+Dixie Fire,2021-07-13,2021-10-25,"Butte, Plumas, Shasta, Lassen, Tehama",963309,39.871306,-121.389439,https://www.fire.ca.gov/incidents/2021/7/13/dixie-fire/
+Frenchtown Fire,2021-07-20,2021-07-22,Yuba,45,39.383922,-121.24684,https://www.fire.ca.gov/incidents/2021/7/20/frenchtown-fire/
+McFarland Fire,2021-07-30,2021-09-16,"Shasta, Trinity, Tehama",122653,40.35,-123.034,https://www.fire.ca.gov/incidents/2021/7/30/mcfarland-fire/
+Monument Fire,2021-07-30,2021-10-26,Trinity,223124,40.752,-123.337,https://www.fire.ca.gov/incidents/2021/7/30/monument-fire/
+River Complex,2021-07-30,2021-10-26,"Siskiyou, Trinity",199359,41.389,-123.057,https://www.fire.ca.gov/incidents/2021/7/30/river-complex/
+Antelope Fire,2021-08-01,2021-10-15,Siskiyou,145632,41.5289901,-121.9154934,https://www.fire.ca.gov/incidents/2021/8/1/antelope-fire/
+River Fire,2021-08-04,2021-08-13,"Nevada, Placer",2619,39.08805,-121.01468,https://www.fire.ca.gov/incidents/2021/8/4/river-fire/
+Glen Fire,2021-08-11,2021-08-21,Yuba,184,39.403918,-121.30845,https://www.fire.ca.gov/incidents/2021/8/11/glen-fire/
+Caldor Fire,2021-08-14,2021-10-21,"El Dorado, Alpine, Amador",221835,38.586,-120.537833,https://www.fire.ca.gov/incidents/2021/8/14/caldor-fire/
+McCash Fire,2021-08-18,2021-11-02,Siskiyou,94962,41.564,-123.404,https://www.fire.ca.gov/incidents/2021/8/18/mccash-fire/
+Bennett Fire,2021-08-25,,Nevada,59,39.216752,-121.040771,https://www.fire.ca.gov/incidents/2021/8/25/bennett-fire/
+Bridge Fire,2021-09-05,2021-09-14,Placer,411,38.921239,-121.036613,https://www.fire.ca.gov/incidents/2021/9/5/bridge-fire/
+Brandie Fire,2022-06-11,,Yuba,72,39.319804,-121.392285,https://www.fire.ca.gov/incidents/2022/6/11/brandie-fire/
+Rices Fire,2022-06-28,2022-07-05,Nevada,904,39.319145,-121.192271,https://www.fire.ca.gov/incidents/2022/6/28/rices-fire/
+Bay Fire,2022-07-08,2022-07-10,Yuba,30,39.300253,-121.372749,https://www.fire.ca.gov/incidents/2022/7/8/bay-fire/
+Porter Fire,2022-07-09,,Placer,166,39.020051,-121.344587,https://www.fire.ca.gov/incidents/2022/7/9/porter-fire/
+Riosa Fire,2022-07-17,2022-07-18,Placer,38,38.9848309,-121.340201,https://www.fire.ca.gov/incidents/2022/7/17/riosa-fire/
+Winding Fire,2022-07-18,2022-07-26,Yuba,82,39.314076,-121.27693,https://www.fire.ca.gov/incidents/2022/7/18/winding-fire/
+Apple Fire,2022-07-27,2022-08-02,Yuba,39,39.323167,-121.304167,https://www.fire.ca.gov/incidents/2022/7/27/apple-fire/
+McKinney Fire,2022-07-29,,Siskiyou,60138,41.833813,-122.894782,https://www.fire.ca.gov/incidents/2022/7/29/mckinney-fire/
+Oak Fire,2022-08-15,2022-08-31,Placer,19244,39.04941,-120.9526,https://www.fire.ca.gov/incidents/2022/8/15/oak-fire/
+Pleasant Fire,2022-08-20,2022-08-29,Nevada,48,39.2805,-121.1329,https://www.fire.ca.gov/incidents/2022/8/20/pleasant-fire/
+Still Fire,2022-08-27,2022-08-29,Nevada,44,39.0543,-121.1103,https://www.fire.ca.gov/incidents/2022/8/27/still-fire/
+Hill Fire,2022-09-06,2022-09-15,Placer,11,39.1252,-120.816083,https://www.fire.ca.gov/incidents/2022/9/6/hill-fire/
+Mosquito Fire,2022-09-06,2022-10-22,"El Dorado, Placer",76788,39.00591,-120.7447,https://www.fire.ca.gov/incidents/2022/9/6/mosquito-fire/
+Dutch Fire,2022-09-13,,Placer,48,39.1902,-120.8266,https://www.fire.ca.gov/incidents/2022/9/13/dutch-fire/
+Garden Fire,2022-09-17,,Placer,29,39.9929,-121.2122,https://www.fire.ca.gov/incidents/2022/9/17/garden-fire/
+Sicard Fire,2023-05-30,,Yuba,13,39.2349,-121.3475,https://www.fire.ca.gov/incidents/2023/5/30/sicard-fire/
+Scott Fire,2023-06-15,,Yuba,115,39.3256,-121.3686,https://www.fire.ca.gov/incidents/2023/6/15/scott-fire/
+Peoria Fire,2023-06-23,2023-06-25,Yuba,59,39.258,-121.3801,https://www.fire.ca.gov/incidents/2023/6/23/peoria-fire/
+York Fire,2023-08-01,2023-08-19,San Bernardino,93078,35.191889,-115.317389,https://www.fire.ca.gov/incidents/2023/8/1/york-fire/
+Smith River Complex,2023-08-15,2023-11-17,Del Norte,95107,41.958269,-123.868447,https://www.fire.ca.gov/incidents/2023/8/15/smith-river-complex/
+Highway Fire,2023-08-16,,Nevada,,39.339386,-120.788152,https://www.fire.ca.gov/incidents/2023/8/16/highway-fire/
+SRF Lightning Complex,2023-08-20,2023-10-29,Humboldt,50198,41.017222,-123.611167,https://www.fire.ca.gov/incidents/2023/8/20/srf-lightning-complex/
+Pendola Fire,2024-04-21,,Yuba,18,39.494086,-121.070752,https://www.fire.ca.gov/incidents/2024/4/21/pendola-fire/
+Virginiatown Fire,2024-05-02,,Placer,95,38.902253,-121.201005,https://www.fire.ca.gov/incidents/2024/5/2/virginiatown-fire/
+Watt Fire,2024-05-28,,Placer,20,38.728881,-121.392475,https://www.fire.ca.gov/incidents/2024/5/28/watt-fire/
+Spenceville Fire,2024-06-10,,Yuba,23,39.133016,-121.309465,https://www.fire.ca.gov/incidents/2024/6/10/spenceville-fire/
+Double Fire,2024-06-20,2024-06-23,Yuba,13,39.458459,-121.303342,https://www.fire.ca.gov/incidents/2024/6/20/double-fire/
+Pfe Fire,2024-06-20,,Placer,15,38.728881,-121.392475,https://www.fire.ca.gov/incidents/2024/6/20/pfe-fire/
+Amoruso Fire,2024-06-24,2024-06-25,Placer,502,38.82437,-121.3909,https://www.fire.ca.gov/incidents/2024/6/24/amoruso-fire/
+Watt Fire,2024-07-03,,Placer,23,38.736113,-121.392532,https://www.fire.ca.gov/incidents/2024/7/3/watt-fire/
+Royal Fire,2024-07-07,,Placer,215,39.2393,-120.4168,https://www.fire.ca.gov/incidents/2024/7/7/royal-fire/
+Athens Fire,2024-07-12,,Placer,260,38.8364594,-121.332377,https://www.fire.ca.gov/incidents/2024/7/12/athens-fire/
+Lehi Fire,2024-07-19,2024-07-21,Placer,9,38.8807773,-121.156605,https://www.fire.ca.gov/incidents/2024/7/19/lehi-fire/
+Borel Fire,2024-07-24,2024-09-16,Kern,59288,35.515,-118.6836,https://www.fire.ca.gov/incidents/2024/7/24/borel-fire/
+Park Fire,2024-07-24,,"Butte, Tehama",429603,39.7789,-121.76168,https://www.fire.ca.gov/incidents/2024/7/24/park-fire/
+Far Fire,2024-08-23,,Placer,12,39.037213,-121.312694,https://www.fire.ca.gov/incidents/2024/8/23/far-fire/
+Bear Fire,2024-09-02,2024-09-19,Sierra,3323,39.596704,-120.21859,https://www.fire.ca.gov/incidents/2024/9/2/bear-fire/
+Bridge Fire,2024-09-08,,"Los Angeles, San Bernardino",56030,34.2396,-117.7625,https://www.fire.ca.gov/incidents/2024/9/8/bridge-fire/
+Dutch Fire,2024-10-05,,Nevada,28,39.227018,-120.834831,https://www.fire.ca.gov/incidents/2024/10/5/dutch-fire/
+Verjeles Fire,2024-10-06,2024-10-07,Yuba,12,39.3574,-121.3681,https://www.fire.ca.gov/incidents/2024/10/6/verjeles-fire/
+Iowa Fire,2024-10-21,,Yuba,38,39.293028,-121.48061,https://www.fire.ca.gov/incidents/2024/10/21/iowa-fire/
+Laporte Fire,2025-04-23,2025-04-24,Yuba,15,39.516462,-121.19237,https://www.fire.ca.gov/incidents/2025/4/23/laporte-fire/
+Matthew Fire,2025-05-06,,Nevada,10,39.067758,-121.273365,https://www.fire.ca.gov/incidents/2025/5/6/matthew-fire/
+Catlett Fire,2025-05-10,2025-05-10,Placer,175,38.846183,-121.407882,https://www.fire.ca.gov/incidents/2025/5/10/catlett-fire/
+Sunset Fire,2025-05-18,2025-05-19,Placer,65,38.824583,-121.349272,https://www.fire.ca.gov/incidents/2025/5/18/sunset-fire/
+Spence Fire,2025-05-23,2025-05-23,Yuba,58,39.118918,-121.331078,https://www.fire.ca.gov/incidents/2025/5/23/spence-fire/
+Rica Fire,2025-06-13,2025-06-13,Yuba,25,39.27736,-121.479804,https://www.fire.ca.gov/incidents/2025/6/13/rica-fire/
+Riosa Fire,2025-06-15,2025-06-15,Placer,49,38.9750021,-121.3711948,https://www.fire.ca.gov/incidents/2025/6/15/riosa-fire/
+Marysville Fire,2025-06-29,2025-07-04,Yuba,20,39.382915,-121.151358,https://www.fire.ca.gov/incidents/2025/6/29/marysville-fire/
+Madre Fire,2025-07-02,2025-07-26,San Luis Obispo,80779,35.099242,-119.982548,https://www.fire.ca.gov/incidents/2025/7/2/madre-fire/
+Ravine Fire,2025-07-03,,Nevada,35,39.064532,-121.267354,https://www.fire.ca.gov/incidents/2025/7/3/ravine-fire/
+Moore Fire,2025-07-10,2025-07-11,Placer,20,38.873631,-121.322879,https://www.fire.ca.gov/incidents/2025/7/10/moore-fire/
+Stardust Fire,2025-07-12,2025-07-12,Placer,12,38.882558,-121.247136,https://www.fire.ca.gov/incidents/2025/7/12/stardust-fire/
+Gifford Fire,2025-08-01,2025-10-14,Santa Barbara,131612,35.111258,-120.097902,https://www.fire.ca.gov/incidents/2025/8/1/gifford-fire/
+Ranch Fire,2025-08-04,2025-08-04,Placer,140,38.839,-121.299167,https://www.fire.ca.gov/incidents/2025/8/4/ranch-fire/
+Ponderosa Fire,2025-08-10,2025-08-17,Yuba,87,39.386003,-121.295635,https://www.fire.ca.gov/incidents/2025/8/10/ponderosa-fire/
+Tanabe Fire,2025-08-23,2025-08-26,Yuba,40,39.265104,-121.514636,https://www.fire.ca.gov/incidents/2025/8/23/tanabe-fire/
+Garnet Fire,2025-08-24,2025-10-23,Fresno,59844,36.86508,-119.027914,https://www.fire.ca.gov/incidents/2025/8/24/garnet-fire/
+Porter Fire,2025-09-02,,Placer,10,39.013895,-121.340233,https://www.fire.ca.gov/incidents/2025/9/2/porter-fire/
+Sierra Fire,2025-09-02,2025-09-04,Placer,44,38.862604,-121.21753,https://www.fire.ca.gov/incidents/2025/9/2/sierra-fire/
+16-4 Fire,2025-09-03,,Yuba,10,39.342777,-121.350555,https://www.fire.ca.gov/incidents/2025/9/3/16-4-fire/
+Nichols Fire,2025-10-07,2025-10-07,Nevada,12,39.101047,-121.251881,https://www.fire.ca.gov/incidents/2025/10/7/nichols-fire/
+Elephant Fire,2026-07-11,2026-07-27,Sierra,13930,39.707167,-120.221283,https://www.fire.ca.gov/incidents/2026/7/11/elephant-fire/
+Chute Fire,2026-07-13,,Yuba,163,39.350013,-121.15087,https://www.fire.ca.gov/incidents/2026/7/13/chute-fire/
+Kearney Fire,2026-07-14,2026-07-16,Nevada,41,39.203241,-121.261405,https://www.fire.ca.gov/incidents/2026/7/14/kearney-fire/
+Biscar Fire,2026-07-18,,Lassen,69355,40.61966,-120.303227,https://www.fire.ca.gov/incidents/2026/7/18/biscar-fire/
+Mooney Fire,2026-07-22,2026-07-24,Yuba,25,39.204228,-121.278903,https://www.fire.ca.gov/incidents/2026/7/22/mooney-fire/
+Junction 2 Fire,2026-07-26,2026-08-04,Sierra,270,39.795467,-120.140517,https://www.fire.ca.gov/incidents/2026/7/26/junction-2-fire/
+Combie Fire,2026-07-28,2026-08-03,Nevada,17,39.03317,-121.09253,https://www.fire.ca.gov/incidents/2026/7/28/combie-fire/
+Bug Fire,2026-08-08,2026-08-27,"Lassen, Sierra",93733,39.727395,-120.0372941,https://www.fire.ca.gov/incidents/2026/8/8/bug-fire/
+Flat Fire,2026-08-08,,Nevada,20,39.223965,-120.837484,https://www.fire.ca.gov/incidents/2026/8/8/flat-fire/
+Smith Fire,2026-08-09,,Yuba,18,39.304118,-121.425324,https://www.fire.ca.gov/incidents/2026/8/9/smith-fire/
+Talbot Fire,2026-08-12,2026-08-19,Placer,93,39.173209,-120.386427,https://www.fire.ca.gov/incidents/2026/8/12/talbot-fire/
+Yuba Fire,2026-08-12,,Nevada,20,39.278253,-121.124472,https://www.fire.ca.gov/incidents/2026/8/12/yuba-fire/
+Clover Fire,2026-08-21,2026-08-25,Nevada,14,39.13032,-121.02902,https://www.fire.ca.gov/incidents/2026/8/21/clover-fire/
+Andressen Fire,2026-09-08,,Placer,1,39.00891,-121.35852,https://www.fire.ca.gov/incidents/2026/9/8/andressen-fire/
+Floriston Fire,2026-09-16,2026-09-24,Nevada,622,39.416068,-120.034537,https://www.fire.ca.gov/incidents/2026/9/16/floriston-fire/
+Mineral Fire,2026-09-20,2026-10-03,Placer,17,39.105732,-120.871037,https://www.fire.ca.gov/incidents/2026/9/20/mineral-fire/
+Karchner Fire,2026-09-28,,Nevada,1,39.028683,-121.292034,https://www.fire.ca.gov/incidents/2026/9/28/karchner-fire/
+Alta Fire,2026-10-01,,Placer,1,39.20355,-120.8121,https://www.fire.ca.gov/incidents/2026/10/1/alta-fire/

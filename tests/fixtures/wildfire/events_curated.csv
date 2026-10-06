@@ -1,0 +1,3 @@
+event_id,event_type,date_start,date_end,date_uncertainty,geography,zips_listed,source_url,notes
+MOR_2021_08_05,nonrenewal_moratorium,2021-08-05,2022-08-05,day,River Fire,95945;95712;95949,https://example.invalid/bulletin.pdf,fixture
+RULE_2023_09_21_SIS,rule_change,2023-09-21,,day,California statewide,,https://example.invalid/sis,fixture
