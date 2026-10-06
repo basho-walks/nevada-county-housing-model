@@ -1,0 +1,838 @@
+source,series,geography,year,status
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2000,missing
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2001,missing
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2002,missing
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2003,missing
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2004,missing
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2005,missing
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2006,missing
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2007,missing
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2008,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2009,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2010,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2011,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2012,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2013,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2014,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2015,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2016,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2017,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2018,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2019,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2020,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2021,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2022,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2023,available
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2024,missing
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2025,missing
+cdi_homeowners_part1,"written premium, written exposure, avg written premium by policy form (xlsx)",state,2026,missing
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2000,missing
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2001,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2002,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2003,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2004,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2005,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2006,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2007,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2008,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2009,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2010,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2011,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2012,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2013,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2014,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2015,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2016,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2017,available
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2018,missing
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2019,missing
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2020,missing
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2021,missing
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2022,missing
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2023,missing
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2024,missing
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2025,missing
+cdi_homeowners_part1_archive,"written premium, written exposure, avg written premium by policy form (PDF)",state,2026,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2000,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2001,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2002,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2003,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2004,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2005,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2006,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2007,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2008,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2009,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2010,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2011,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2012,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2013,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2014,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2015,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2016,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2017,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2018,available
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2019,available
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2020,available
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2021,available
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2022,available
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2023,available
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2024,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2025,missing
+cdi_sb824_wildfire_risk,"earned premium, earned exposure, avg Cov A/C, fire/smoke losses (All Companies)",ZIP,2026,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2000,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2001,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2002,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2003,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2004,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2005,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2006,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2007,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2008,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2009,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2010,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2011,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2012,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2013,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2014,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2015,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2016,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2017,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2018,available
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2019,available
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2020,available
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2021,available
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2022,available
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2023,available
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2024,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2025,missing
+cdi_sb824_wildfire_risk,fire risk category counts and avg fire risk (reporting-insurer subset),ZIP,2026,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2000,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2001,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2002,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2003,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2004,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2005,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2006,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2007,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2008,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2009,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2010,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2011,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2012,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2013,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2014,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2015,available
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2016,available
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2017,available
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2018,available
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2019,available
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2020,available
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2021,available
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2022,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2023,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2024,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2025,missing
+cdi_nonrenewal_zip_2015_2021,"voluntary market new, renewed, insured- and insurer-initiated nonrenewed",ZIP,2026,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2000,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2001,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2002,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2003,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2004,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2005,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2006,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2007,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2008,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2009,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2010,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2011,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2012,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2013,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2014,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2015,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2016,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2017,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2018,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2019,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2020,available
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2021,available
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2022,available
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2023,available
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2024,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2025,missing
+cdi_nonrenewal_zip_2020_2023,"voluntary market new, renewed, nonrenewed (total)",ZIP,2026,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2000,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2001,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2002,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2003,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2004,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2005,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2006,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2007,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2008,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2009,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2010,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2011,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2012,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2013,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2014,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2015,available
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2016,available
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2017,available
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2018,available
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2019,available
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2020,available
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2021,available
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2022,available
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2023,available
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2024,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2025,missing
+cdi_nonrenewal_county,"voluntary market new, renewed, nonrenewed",county,2026,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2000,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2001,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2002,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2003,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2004,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2005,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2006,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2007,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2008,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2009,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2010,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2011,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2012,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2013,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2014,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2015,available
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2016,available
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2017,available
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2018,available
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2019,available
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2020,available
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2021,available
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2022,available
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2023,available
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2024,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2025,missing
+cdi_nonrenewal_county,FAIR Plan new and renewed policies,county,2026,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2000,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2001,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2002,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2003,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2004,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2005,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2006,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2007,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2008,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2009,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2010,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2011,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2012,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2013,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2014,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2015,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2016,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2017,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2018,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2019,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2020,available
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2021,available
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2022,available
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2023,available
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2024,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2025,missing
+cdi_nonrenewal_county,difference-in-conditions new and renewed policies,county,2026,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2000,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2001,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2002,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2003,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2004,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2005,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2006,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2007,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2008,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2009,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2010,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2011,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2012,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2013,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2014,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2015,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2016,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2017,available
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2018,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2019,available
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2020,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2021,available
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2022,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2023,available
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2024,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2025,missing
+cdi_fire_eq_policy_counts,fire and earthquake policy counts by policy form,county,2026,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2000,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2001,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2002,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2003,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2004,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2005,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2006,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2007,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2008,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2009,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2010,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2011,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2012,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2013,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2014,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2015,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2016,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2017,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2018,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2019,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2020,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2021,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2022,available
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2023,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2024,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2025,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (12 Nevada County ZIPs listed)",ZIP,2026,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2000,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2001,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2002,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2003,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2004,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2005,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2006,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2007,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2008,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2009,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2010,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2011,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2012,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2013,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2014,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2015,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2016,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2017,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2018,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2019,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2020,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2021,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2022,suppressed
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2023,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2024,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2025,missing
+cdi_fair_plan_share_zip,"dwelling units insured, voluntary vs FAIR Plan (95712, 95924 absent; <5 structures rule)",ZIP,2026,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2000,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2001,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2002,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2003,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2004,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2005,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2006,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2007,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2008,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2009,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2010,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2011,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2012,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2013,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2014,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2015,available
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2016,available
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2017,available
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2018,available
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2019,available
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2020,available
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2021,available
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2022,available
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2023,available
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2024,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2025,missing
+cdi_fact_sheets,"new and renewed policies: FAIR Plan, voluntary, surplus lines",state,2026,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2000,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2001,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2002,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2003,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2004,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2005,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2006,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2007,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2008,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2009,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2010,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2011,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2012,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2013,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2014,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2015,available
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2016,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2017,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2018,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2019,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2020,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2021,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2022,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2023,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2024,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2025,missing
+cdi_wildfire_risk_appendix_c,dwelling units in high/very high modeled wildfire risk,county,2026,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2000,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2001,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2002,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2003,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2004,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2005,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2006,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2007,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2008,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2009,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2010,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2011,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2012,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2013,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2014,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2015,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2016,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2017,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2018,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2019,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2020,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2021,available
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2022,available
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2023,available
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2024,available
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2025,available
+cfp_policies_and_exposure_zip,FAIR Plan residential policies in force at 30 Sep (fiscal year),ZIP,2026,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2000,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2001,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2002,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2003,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2004,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2005,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2006,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2007,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2008,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2009,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2010,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2011,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2012,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2013,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2014,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2015,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2016,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2017,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2018,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2019,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2020,missing
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2021,available
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2022,available
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2023,available
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2024,available
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2025,available
+cfp_policies_and_exposure_zip,FAIR Plan residential total insured value at 30 Sep (fiscal year),ZIP,2026,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2000,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2001,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2002,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2003,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2004,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2005,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2006,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2007,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2008,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2009,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2010,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2011,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2012,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2013,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2014,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2015,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2016,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2017,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2018,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2019,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2020,missing
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2021,available
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2022,available
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2023,available
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2024,available
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2025,available
+cfp_policies_and_exposure_zip,"FAIR Plan policies in force at 30 Sep, all lines",county,2026,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2000,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2001,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2002,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2003,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2004,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2005,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2006,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2007,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2008,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2009,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2010,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2011,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2012,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2013,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2014,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2015,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2016,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2017,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2018,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2019,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2020,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2021,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2022,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2023,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2024,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2025,missing
+cfp_category_snapshot,"FAIR Plan residential policies, premium, exposure by category at 30 Jun 2026",ZIP,2026,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2000,missing
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2001,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2002,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2003,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2004,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2005,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2006,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2007,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2008,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2009,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2010,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2011,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2012,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2013,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2014,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2015,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2016,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2017,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2018,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2019,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2020,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2021,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2022,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2023,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2024,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2025,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (95945, 95949, 95959, 95946, 95975)",ZIP,2026,missing
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2000,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2001,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2002,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2003,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2004,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2005,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2006,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2007,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2008,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2009,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2010,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2011,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2012,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2013,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2014,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2015,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2016,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2017,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2018,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2019,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2020,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2021,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2022,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2023,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2024,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2025,available
+zillow_zhvi_zip,"ZHVI mid-tier SFR+condo, smoothed SA (96161 Truckee)",ZIP,2026,missing
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2000,missing
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2001,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2002,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2003,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2004,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2005,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2006,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2007,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2008,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2009,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2010,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2011,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2012,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2013,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2014,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2015,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2016,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2017,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2018,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2019,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2020,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2021,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2022,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2023,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2024,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2025,available
+zillow_zhvi_city,"ZHVI mid-tier SFR+condo, smoothed SA (Grass Valley, Nevada City)",city,2026,missing
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2000,missing
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2001,missing
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2002,missing
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2003,missing
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2004,missing
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2005,missing
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2006,missing
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2007,missing
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2008,missing
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2009,missing
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2010,missing
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2011,available
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2012,available
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2013,available
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2014,available
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2015,available
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2016,available
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2017,available
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2018,available
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2019,available
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2020,available
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2021,available
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2022,available
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2023,available
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2024,available
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2025,missing
+census_acs5_zcta,"ACS 5-year detailed tables, e.g. B25077 median home value (year = end of 5-year period)",ZCTA,2026,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2000,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2001,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2002,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2003,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2004,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2005,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2006,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2007,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2008,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2009,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2010,available
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2011,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2012,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2013,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2014,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2015,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2016,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2017,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2018,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2019,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2020,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2021,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2022,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2023,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2024,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2025,missing
+census_zcta_relationship,ZCTA to county relationship file (2010 ZCTA),ZCTA,2026,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2000,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2001,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2002,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2003,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2004,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2005,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2006,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2007,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2008,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2009,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2010,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2011,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2012,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2013,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2014,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2015,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2016,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2017,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2018,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2019,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2020,available
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2021,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2022,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2023,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2024,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2025,missing
+census_zcta_relationship,ZCTA to county and ZCTA 2010-2020 relationship files (2020 ZCTA),ZCTA,2026,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2000,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2001,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2002,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2003,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2004,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2005,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2006,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2007,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2008,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2009,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2010,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2011,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2012,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2013,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2014,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2015,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2016,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2017,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2018,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2019,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2020,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2021,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2022,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2023,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2024,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2025,missing
+hud_usps_zip_crosswalk,USPS ZIP to ZCTA/county/tract residential ratios (not retrieved; login required),ZIP,2026,missing
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2000,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2001,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2002,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2003,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2004,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2005,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2006,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2007,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2008,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2009,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2010,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2011,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2012,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2013,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2014,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2015,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2016,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2017,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2018,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2019,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2020,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2021,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2022,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2023,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2024,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2025,available
+fred,"MORTGAGE30US 30-year fixed mortgage rate, annual mean",national,2026,missing
+fred,"CPIAUCSL CPI-U, annual mean",national,2000,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2001,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2002,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2003,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2004,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2005,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2006,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2007,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2008,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2009,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2010,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2011,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2012,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2013,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2014,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2015,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2016,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2017,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2018,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2019,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2020,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2021,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2022,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2023,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2024,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2025,available
+fred,"CPIAUCSL CPI-U, annual mean",national,2026,missing
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2000,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2001,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2002,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2003,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2004,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2005,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2006,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2007,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2008,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2009,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2010,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2011,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2012,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2013,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2014,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2015,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2016,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2017,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2018,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2019,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2020,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2021,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2022,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2023,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2024,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2025,available
+fred,"ATNHPIUS06057A FHFA all-transactions HPI, Nevada County",county,2026,missing
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2000,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2001,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2002,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2003,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2004,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2005,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2006,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2007,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2008,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2009,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2010,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2011,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2012,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2013,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2014,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2015,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2016,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2017,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2018,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2019,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2020,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2021,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2022,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2023,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2024,available
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2025,missing
+fred,"PCPI06057 per-capita personal income, Nevada County",county,2026,missing
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2000,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2001,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2002,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2003,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2004,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2005,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2006,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2007,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2008,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2009,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2010,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2011,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2012,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2013,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2014,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2015,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2016,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2017,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2018,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2019,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2020,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2021,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2022,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2023,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2024,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2025,available
+fred,"BPPRIV006057 housing units authorized, Nevada County",county,2026,missing
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2000,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2001,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2002,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2003,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2004,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2005,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2006,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2007,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2008,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2009,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2010,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2011,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2012,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2013,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2014,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2015,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2016,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2017,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2018,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2019,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2020,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2021,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2022,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2023,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2024,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2025,available
+census_popest,"July 1 county population estimates (V2000s intercensal, V2020, V2025)",county,2026,missing

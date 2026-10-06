@@ -58,7 +58,7 @@ def test_identity_mapping_reports_unmatched_zips():
     df = pd.DataFrame({"zip": [95945, "95712", "95959"], "v": [1, 2, 3]})
     matched, unmatched = map_zip_to_zcta(df, zctas={"95945", "95959"})
     assert matched["zcta"].tolist() == ["95945", "95959"]
-    assert matched["zcta_weight"].tolist() == [1.0, 1.0]
+    assert matched["xw_weight"].tolist() == [1.0, 1.0]
     assert set(matched["zcta_method"]) == {"identity"}
     assert unmatched["zip"].tolist() == ["95712"]
     assert list(unmatched.columns) == ["zip", "v"]
@@ -70,7 +70,7 @@ def test_crosswalk_mapping_is_many_to_many_and_carries_weights(crosswalk):
     assert len(matched) == 3
     rows_95945 = matched[matched["zip"] == "95945"]
     assert sorted(rows_95945["zcta"]) == ["95945", "95949"]
-    assert rows_95945["zcta_weight"].sum() == pytest.approx(1.0)
+    assert rows_95945["xw_weight"].sum() == pytest.approx(1.0)
     # The value is carried unweighted; callers apply the weight explicitly.
     assert set(rows_95945["v"]) == {10}
     assert unmatched["zip"].tolist() == ["96162"]

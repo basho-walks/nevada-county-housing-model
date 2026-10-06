@@ -73,7 +73,7 @@ def map_zip_to_zcta(
     zctas: set[str] | None = None,
     zip_col: str = "zip",
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Attach zcta, zcta_weight and zcta_method to ZIP rows; return (matched, unmatched).
+    """Attach zcta, xw_weight and zcta_method to ZIP rows; return (matched, unmatched).
 
     With `crosswalk` (columns zip, zcta, weight) one ZIP can map to several ZCTAs: rows are repeated
     and the weight is carried, not applied. Without it, a ZIP maps only to the same-coded ZCTA in `zctas`.
@@ -88,14 +88,14 @@ def map_zip_to_zcta(
         xw["zcta"] = xw["zcta"].map(normalize_zcta)
         if xw.duplicated(["zip", "zcta"]).any():
             raise DuplicateKeyError("crosswalk has duplicate (zip, zcta) rows")
-        xw = xw.rename(columns={"zip": zip_col, "weight": "zcta_weight"})
+        xw = xw.rename(columns={"zip": zip_col, "weight": "xw_weight"})
         merged = out.merge(xw, on=zip_col, how="left")
         merged["zcta_method"] = "crosswalk"
     else:
         known = {normalize_zcta(z) for z in zctas}
         merged = out.copy()
         merged["zcta"] = merged[zip_col].where(merged[zip_col].isin(known))
-        merged["zcta_weight"] = merged["zcta"].notna().astype(float)
+        merged["xw_weight"] = merged["zcta"].notna().astype(float)
         merged["zcta_method"] = "identity"
     hit = merged["zcta"].notna()
     unmatched = merged.loc[~hit, list(out.columns)].reset_index(drop=True)
