@@ -13,7 +13,7 @@
   "zhvi_revision": [
     "2026-09-16"
   ],
-  "zhvi_units": "USD nominal (zhvi_nominal); USD of BASE_YEAR (zhvi_real_*), not index points",
+  "zhvi_units": "USD nominal (zhvi); USD of BASE_YEAR (zhvi_real), not index points",
   "zhvi_annual_rule": "calendar-year mean of monthly values, kept only when the year has 10+ months (fetch_data.annual_mean)",
   "zhvi_geography": "Zillow ZIP mapped to 2020 ZCTA by identity (docs/schema.md 4.1)",
   "deflator": "CPI-U CPIAUCSL annual mean from data/national_annual.csv; real = nominal * CPI[2025] / CPI[year]",

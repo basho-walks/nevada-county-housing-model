@@ -29,7 +29,7 @@ UNMATCHED = ROOT / "data" / "interim" / "unmatched" / "housing_zip_year.csv"
 
 # Must equal BASE_YEAR in model.py; ingest may not import model.py (ingest/__init__.py).
 BASE_YEAR = 2025
-REAL = f"_real_{BASE_YEAR}"
+REAL = "_real"
 
 ZHVI_PRODUCT = "zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month"
 ZILLOW_URL = f"https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_{ZHVI_PRODUCT}.csv"
@@ -78,7 +78,7 @@ ACS_COLS = [
 COLUMNS = [
     "zcta", "year", "policy_form", "zip_source", "zcta_method",
     "zillow_region_id", "zillow_county", "zhvi_product", "zhvi_revision", "zhvi_rule",
-    "zhvi_months", "zhvi_nominal", f"zhvi{REAL}", "zhvi_missing",
+    "zhvi_months", "zhvi", f"zhvi{REAL}", "zhvi_missing",
     *ACS_COLS,
     "candidate_spillover_source", "spillover_screen",
 ]
@@ -176,7 +176,7 @@ def load_zillow(path: Path) -> pd.DataFrame:
     monthly.index = pd.to_datetime(monthly.index)
     monthly.columns = wide["RegionName"]
     means, months = annual_align(monthly)
-    long = means.reset_index().melt(id_vars="year", var_name="zip", value_name="zhvi_nominal")
+    long = means.reset_index().melt(id_vars="year", var_name="zip", value_name="zhvi")
     counts = months.reset_index().melt(id_vars="year", var_name="zip", value_name="zhvi_months")
     long = long.merge(counts, on=["year", "zip"], validate="one_to_one")
     long = long[long["zhvi_months"] > 0]
@@ -184,7 +184,7 @@ def load_zillow(path: Path) -> pd.DataFrame:
     info = info.rename(columns={"RegionID": "zillow_region_id", "CountyName": "zillow_county"})
     long = long.join(info, on="zip")
     long["zhvi_rule"] = ANNUAL_RULE_CODE
-    long["zhvi_missing"] = np.where(long["zhvi_nominal"].notna(), 0, 5)
+    long["zhvi_missing"] = np.where(long["zhvi"].notna(), 0, 5)
     return long.reset_index(drop=True)
 
 
@@ -254,12 +254,12 @@ def build(raw: Path = RAW, national: Path = NATIONAL, acs_years: Iterable[int] =
     acs = load_acs(raw, acs_years)
     zillow = load_zillow(raw / ZILLOW_RAW)
     matched, unmatched = map_zip_to_zcta(zillow, zctas=set(acs["zcta"]), zip_col="zip")
-    matched = matched.drop(columns="zcta_weight").rename(columns={"zip": "zip_source"})
+    matched = matched.drop(columns="xw_weight").rename(columns={"zip": "zip_source"})
 
     panel = matched.merge(acs, on=["zcta", "year"], how="outer", validate="one_to_one")
     factor = deflator(national)
     by_year = panel["year"].map(factor)
-    panel[f"zhvi{REAL}"] = panel["zhvi_nominal"] * by_year
+    panel[f"zhvi{REAL}"] = panel["zhvi"] * by_year
     panel[f"median_hh_income{REAL}"] = panel["median_hh_income"] * by_year
     panel[f"median_hh_income{REAL}_moe"] = panel["median_hh_income_moe"] * by_year
 
@@ -296,7 +296,7 @@ def _round(df: pd.DataFrame) -> pd.DataFrame:
 def write_outputs(panel: pd.DataFrame, unmatched: pd.DataFrame) -> None:
     _round(panel).to_csv(OUT, index=False)
     UNMATCHED.parent.mkdir(parents=True, exist_ok=True)
-    cols = ["zip", "year", "zhvi_nominal", "zhvi_months", "zillow_region_id", "zillow_county"]
+    cols = ["zip", "year", "zhvi", "zhvi_months", "zillow_region_id", "zillow_county"]
     _round(unmatched[cols]).sort_values(["zip", "year"]).to_csv(UNMATCHED, index=False)
     revision = sorted(panel["zhvi_revision"].dropna().unique())
     meta = {
@@ -305,7 +305,7 @@ def write_outputs(panel: pd.DataFrame, unmatched: pd.DataFrame) -> None:
         "canonical_key": ["zcta", "year", "policy_form"],
         "zhvi_product": ZHVI_PRODUCT,
         "zhvi_revision": revision,
-        "zhvi_units": "USD nominal (zhvi_nominal); USD of BASE_YEAR (zhvi_real_*), not index points",
+        "zhvi_units": "USD nominal (zhvi); USD of BASE_YEAR (zhvi_real), not index points",
         "zhvi_annual_rule": ANNUAL_RULE,
         "zhvi_geography": "Zillow ZIP mapped to 2020 ZCTA by identity (docs/schema.md 4.1)",
         "deflator": f"CPI-U CPIAUCSL annual mean from data/national_annual.csv; real = nominal * CPI[{BASE_YEAR}] / CPI[year]",
