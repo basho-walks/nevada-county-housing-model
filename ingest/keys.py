@@ -12,7 +12,10 @@ import pandas as pd
 KEY = ("zcta", "year", "policy_form")
 
 # CDI SB 824 form codes (docs/sources.md S2). FP is excluded until CDI defines it; ALL marks non-policy tables.
-POLICY_FORMS = frozenset({"HO", "RT", "CO", "MH", "DO", "DT", "ALL"})
+CDI_FORMS = frozenset({"HO", "RT", "CO", "MH", "DO", "DT", "ALL"})
+# Insurance product names from issue #3 (ingest/insurance.py), kept distinct from the form codes.
+PRODUCT_FORMS = frozenset({"admitted_homeowners", "dwelling_fire", "fair_plan", "supplemental"})
+POLICY_FORMS = CDI_FORMS | PRODUCT_FORMS
 
 YEAR_MIN, YEAR_MAX = 1990, 2100
 
@@ -53,10 +56,12 @@ def normalize_zcta(value) -> str:
 
 
 def normalize_policy_form(value) -> str:
-    s = str(value).strip().upper()
-    if s not in POLICY_FORMS:
-        raise ValueError(f"unknown policy_form: {value!r}")
-    return s
+    s = str(value).strip()
+    if s.upper() in CDI_FORMS:
+        return s.upper()
+    if s.lower() in PRODUCT_FORMS:
+        return s.lower()
+    raise ValueError(f"unknown policy_form: {value!r}")
 
 
 def normalize_year(value) -> int:
@@ -73,7 +78,7 @@ def map_zip_to_zcta(
     zctas: set[str] | None = None,
     zip_col: str = "zip",
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Attach zcta, zcta_weight and zcta_method to ZIP rows; return (matched, unmatched).
+    """Attach zcta, xw_weight and zcta_method to ZIP rows; return (matched, unmatched).
 
     With `crosswalk` (columns zip, zcta, weight) one ZIP can map to several ZCTAs: rows are repeated
     and the weight is carried, not applied. Without it, a ZIP maps only to the same-coded ZCTA in `zctas`.
@@ -88,14 +93,14 @@ def map_zip_to_zcta(
         xw["zcta"] = xw["zcta"].map(normalize_zcta)
         if xw.duplicated(["zip", "zcta"]).any():
             raise DuplicateKeyError("crosswalk has duplicate (zip, zcta) rows")
-        xw = xw.rename(columns={"zip": zip_col, "weight": "zcta_weight"})
+        xw = xw.rename(columns={"zip": zip_col, "weight": "xw_weight"})
         merged = out.merge(xw, on=zip_col, how="left")
         merged["zcta_method"] = "crosswalk"
     else:
         known = {normalize_zcta(z) for z in zctas}
         merged = out.copy()
         merged["zcta"] = merged[zip_col].where(merged[zip_col].isin(known))
-        merged["zcta_weight"] = merged["zcta"].notna().astype(float)
+        merged["xw_weight"] = merged["zcta"].notna().astype(float)
         merged["zcta_method"] = "identity"
     hit = merged["zcta"].notna()
     unmatched = merged.loc[~hit, list(out.columns)].reset_index(drop=True)

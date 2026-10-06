@@ -163,7 +163,7 @@ Every panel table is keyed by **`(zcta, year, policy_form)`**, unique per row.
 |--------|------|------|
 | `zcta` | string, 5 digits | 2020 ZCTA. Zero-padded. Census prefixes (`860Z200US`, `ZCTA5 `) stripped. `normalize_zcta`. |
 | `year` | integer | Calendar year (section 7 of `docs/estimands.md`). ACS rows use the end year of the 5-year window. FAIR Plan rows use the fiscal year end (30 Sep). |
-| `policy_form` | string | One of `HO, RT, CO, MH, DO, DT` (CDI SB 824 codes, S2) or `ALL` for tables without a policy form (housing, ACS, wildfire). `FP` is rejected until CDI defines it. |
+| `policy_form` | string | One of `HO, RT, CO, MH, DO, DT` (CDI SB 824 codes, S2), `ALL` for tables without a policy form (housing, ACS, wildfire), or an insurance product name for `insurance_zip_year`: `admitted_homeowners, dwelling_fire, fair_plan, supplemental`. Codes are upper case, product names lower case. `FP` is rejected until CDI defines it. |
 
 - Inputs keep their source identifier too (`zip_source` for ZIP inputs).
 - `canonical_keys()` in `ingest/keys.py` normalizes the three columns and raises
@@ -212,3 +212,5 @@ permission exists (`docs/sources.md`, "Reuse rights").
 ## Change log
 
 - Version 1 (issue #2): initial target ZIPs, crosswalks and key.
+- Version 2 (issue #3): `policy_form` also accepts the four insurance product names used by
+  `insurance_zip_year`.
