@@ -1,0 +1,274 @@
+{
+  "panel_version": "s1-8c0157b10d02-d73d2bb7cf6b",
+  "schema_version": 1,
+  "git_sha": "8c0157b10d02229a1d58c9161afacd3596052893",
+  "git_dirty": true,
+  "input_hash": "d73d2bb7cf6b88d4b2ea6d1b1ccbc2337e38b1a6c1cec8ce7219683ac9ce3924",
+  "build_command": "uv run python build_panel.py",
+  "base_year": 2025,
+  "output": {
+    "path": "data/panel_zip_year.csv",
+    "sha256": "c4e1a338e494f2b6f164217050f35da13bcca97438c8f302b6087c4846d686d9",
+    "rows": 6696,
+    "columns": 112,
+    "zctas": 248,
+    "years": [
+      2000,
+      2026
+    ]
+  },
+  "key": [
+    "zcta",
+    "year"
+  ],
+  "canonical_key": [
+    "zcta",
+    "year",
+    "policy_form"
+  ],
+  "universe": {
+    "excluded_east": 3,
+    "region": 56,
+    "spillover_source": 180,
+    "target": 9
+  },
+  "inputs": {
+    "data/insurance_zip_year.csv": {
+      "sha256": "30369e8b7de4b517afc98460dc02c19c530e84c9a433c35aca36b9acc04de13f",
+      "rows": 144,
+      "produced_by": "uv run python -m ingest.insurance",
+      "raw_manifest": {
+        "path": "data/raw/insurance/*/*/manifest.json"
+      }
+    },
+    "data/housing_zip_year.csv": {
+      "sha256": "42e839ef54586f9ef49bc5ddaa79d39edea72a6e4282bf8015724bb397f38550",
+      "rows": 39400,
+      "produced_by": "uv run python -m ingest.housing",
+      "raw_manifest": {
+        "path": "data/raw/housing/manifest.json"
+      }
+    },
+    "data/wildfire_zip.csv": {
+      "sha256": "022534f24b9378035fc5af208a7c44023260f324ce6d7ae8c41091980d2d0a92",
+      "rows": 68,
+      "produced_by": "uv run python -m ingest.wildfire build",
+      "raw_manifest": {
+        "path": "data/raw/wildfire/manifest.json"
+      }
+    },
+    "data/event_register.csv": {
+      "sha256": "8a3e6cc28cd044dc7fe6548efe1324bb6a35cedc270bfa73a5b1b12ea429f19c",
+      "rows": 71,
+      "produced_by": "uv run python -m ingest.wildfire build",
+      "raw_manifest": {
+        "path": "data/raw/wildfire/manifest.json"
+      }
+    },
+    "data/ca_county_panel.csv": {
+      "sha256": "64d8c0faadf9f43b71ebd1d4e0e29672dea00e7aa61dd62929af436f52175ba0",
+      "rows": 3306,
+      "produced_by": "uv run python fetch_data.py"
+    },
+    "data/ca_county_names.csv": {
+      "sha256": "7fe0ed7f9dfa98787743965bee34cf019e201b91ae65a323d6d51188e94b2bf9",
+      "rows": 58,
+      "produced_by": "uv run python fetch_data.py"
+    },
+    "data/national_annual.csv": {
+      "sha256": "2f83cf0af8a1db3e968c9fe66fdb3eb50789f9b5e7d58bfd7b5dc30a72d873de",
+      "rows": 80,
+      "produced_by": "uv run python fetch_data.py"
+    },
+    "data/raw/wildfire/zcta_county_region.csv": {
+      "sha256": "2ecd2e3be46e243883139702d8fcd49185e51a9e95165dc3c9704d5e7a7d001d",
+      "rows": 75,
+      "produced_by": "uv run python -m ingest.wildfire fetch",
+      "raw_manifest": {
+        "path": "data/raw/wildfire/manifest.json"
+      }
+    },
+    "data/interim/unmatched/insurance_zip_year.csv": {
+      "sha256": "c8b21c1718b1f1860583d044559000d7619e03d167a44299da7ee69fbadf1a6c",
+      "rows": 31,
+      "produced_by": "uv run python -m ingest.insurance"
+    },
+    "data/interim/unmatched/housing_zip_year.csv": {
+      "sha256": "d6bb2a6e8f711d96901fc99fc43d3bf259767cd501458ba83c695611fcd1b38e",
+      "rows": 47,
+      "produced_by": "uv run python -m ingest.housing"
+    },
+    "data/interim/unmatched/wildfire_zip.csv": {
+      "sha256": "bcfd97e5140c1766a41954c89f5205c9c0cfd4ab8f091906afabaa8dcfa9cdd6",
+      "rows": 30,
+      "produced_by": "uv run python -m ingest.wildfire build"
+    }
+  },
+  "raw_manifests": {
+    "data/raw/housing/manifest.json": "d4da8397a335d5f91e2939bab493936adde41aed121d0774b628782218bb94e0",
+    "data/raw/insurance/cdi_s1_part1_summary/2001-2017/manifest.json": "96014280a87befbd7da45fc41d10294e0284d674ec311c4fcab1546f4a5db285",
+    "data/raw/insurance/cdi_s1_part1_summary/2008-2023/manifest.json": "5de3b4afc32230b1594f08c46f5ccc9780e3a207aeea9da54c792ef3cb729561",
+    "data/raw/insurance/cdi_s2_sb824_zip/2018-2023/manifest.json": "71a81269a75f07522f3549395eca4347cee078bbbbe356d068cf8031be487796",
+    "data/raw/insurance/cdi_s3_nonrenewal_zip/2015-2021/manifest.json": "d27bbde1fccfee4dd9f2dda7069c7713e14751e263ce884d74663119998f003d",
+    "data/raw/insurance/cdi_s3_nonrenewal_zip/2020-2023/manifest.json": "4a1c8c6bbed9038498cbe039c54aa312db435424c8e7c53cd6e3d264cfc0ffb0",
+    "data/raw/insurance/cdi_s4_nonrenewal_county/2015-2021/manifest.json": "d8540308742f9170c7c6c9dd55d59790099f75022d40af3845c4c27163baf235",
+    "data/raw/insurance/cdi_s4_nonrenewal_county/2020-2023/manifest.json": "d2b11a2cf00d67956830b628e8ef439e9abf9a2107ec271c07a3aacded3ea7ae",
+    "data/raw/insurance/cdi_s5_policy_count_county/2017/manifest.json": "f319069091aa81aeb4256d7d8bbd1f7b9bb001a2270a626c3e7eda9f19feabec",
+    "data/raw/insurance/cdi_s5_policy_count_county/2019/manifest.json": "cc111e9fff2c227c79a66550bcace133f5c93763f36de78cd4ba3a8725940caf",
+    "data/raw/insurance/cdi_s5_policy_count_county/2021/manifest.json": "4b0216bbf752563d2d1be95d67be0de42051381caa74f6fdc144c1a3e0c82468",
+    "data/raw/insurance/cdi_s5_policy_count_county/2023/manifest.json": "1017428a712ce826f9fce79d087ea82fe57789fe504c0ab3e3179125815f46d6",
+    "data/raw/insurance/cdi_s6_fair_plan_share_zip/2022/manifest.json": "456a3d439354597e2bd5ecd74363a3be908b48104e5146be99580f99448270df",
+    "data/raw/insurance/cdi_s7_fact_sheets/2015-2018/manifest.json": "f9cf0909718f262cb110db65e3031417d400ccf282383568b6ddfc735260e822",
+    "data/raw/insurance/cdi_s7_fact_sheets/2019/manifest.json": "35ff5844dacd1ed530e3e15cee510b0168e5adfc647b7bb01465163b511f1680",
+    "data/raw/insurance/cdi_s7_fact_sheets/2020/manifest.json": "60babba54c7f69116e2081a11f04ee71d453d07c9c6122d2d160d56ce02dc8d0",
+    "data/raw/insurance/cdi_s7_fact_sheets/2021/manifest.json": "233bd44e3ed7aa6f47831b423adafcc7ad45fea556ab188d13df82c926e0495b",
+    "data/raw/insurance/cdi_s7_fact_sheets/2022/manifest.json": "bba57045c3e5b3a089817fc9a4576e4cb615805f4eac9750e6c5c50a7085ff1f",
+    "data/raw/insurance/cdi_s7_fact_sheets/2023/manifest.json": "73f00d73c098934b36279cae4c2900ad8e13e6de2836344b6ee9e590a7d55b1f",
+    "data/raw/insurance/cdi_s8_appendix_c_county/2015/manifest.json": "e9e17ac8e78a123f45ac198efb7b26f728a0b88d507f95faaaf38ae6ac53f327",
+    "data/raw/wildfire/manifest.json": "56b8ca6d4384786a149c3df652a80693822196fabd8410cfe8bc814f1584a1b9"
+  },
+  "imputation": "none: missing values stay missing; no fill, carry-forward or interpolation",
+  "acs_alignment": "ACS 5-year values sit only on the window end year; never repeated on other years",
+  "complete_case_columns": [
+    "zhvi_real",
+    "admitted_homeowners__avg_premium_per_exposure_real",
+    "admitted_homeowners__nonrenewal_rate",
+    "cdi_avg_fire_risk_latest"
+  ],
+  "jump_thresholds": {
+    "zhvi_real": {
+      "kind": "abs_log",
+      "limit": 0.25
+    },
+    "admitted_homeowners__avg_premium_per_exposure_real": {
+      "kind": "abs_log",
+      "limit": 0.4
+    },
+    "dwelling_fire__avg_premium_per_exposure_real": {
+      "kind": "abs_log",
+      "limit": 0.4
+    },
+    "admitted_homeowners__nonrenewal_rate": {
+      "kind": "abs_diff",
+      "limit": 0.1
+    },
+    "county_population": {
+      "kind": "abs_log",
+      "limit": 0.1
+    }
+  },
+  "column_timing": {
+    "zcta": "key",
+    "year": "key",
+    "policy_form": "key",
+    "geo_tier": "static_geography",
+    "county_fips": "static_geography",
+    "hu2020": "fixed_vintage_2020",
+    "panel_role": "static_geography",
+    "schema_version": "static_geography",
+    "admitted_homeowners__sources": "same_year",
+    "admitted_homeowners__exposures": "same_year",
+    "admitted_homeowners__earned_premium": "same_year",
+    "admitted_homeowners__earned_premium_real": "same_year",
+    "admitted_homeowners__avg_premium_per_exposure": "same_year",
+    "admitted_homeowners__avg_premium_per_exposure_real": "same_year",
+    "admitted_homeowners__avg_coverage_a": "same_year",
+    "admitted_homeowners__avg_coverage_a_real": "same_year",
+    "admitted_homeowners__avg_coverage_c": "same_year",
+    "admitted_homeowners__avg_coverage_c_real": "same_year",
+    "admitted_homeowners__coverage_basis": "same_year",
+    "admitted_homeowners__premium_per_1000_coverage_a": "same_year",
+    "admitted_homeowners__form_share_of_admitted": "same_year",
+    "admitted_homeowners__policies_new": "same_year",
+    "admitted_homeowners__policies_renewed": "same_year",
+    "admitted_homeowners__nonrenewed_total": "same_year",
+    "admitted_homeowners__nonrenewed_insurer": "same_year",
+    "admitted_homeowners__nonrenewed_insured": "same_year",
+    "admitted_homeowners__nonrenewal_rate": "same_year",
+    "admitted_homeowners__s3_vintage": "same_year",
+    "admitted_homeowners__series_break": "same_year",
+    "admitted_homeowners__coverage_def_change": "same_year",
+    "admitted_homeowners__mix_shift": "same_year",
+    "admitted_homeowners__combined_premium_unavailable": "same_year",
+    "dwelling_fire__sources": "same_year",
+    "dwelling_fire__exposures": "same_year",
+    "dwelling_fire__earned_premium": "same_year",
+    "dwelling_fire__earned_premium_real": "same_year",
+    "dwelling_fire__avg_premium_per_exposure": "same_year",
+    "dwelling_fire__avg_premium_per_exposure_real": "same_year",
+    "dwelling_fire__avg_coverage_a": "same_year",
+    "dwelling_fire__avg_coverage_a_real": "same_year",
+    "dwelling_fire__avg_coverage_c": "same_year",
+    "dwelling_fire__avg_coverage_c_real": "same_year",
+    "dwelling_fire__coverage_basis": "same_year",
+    "dwelling_fire__premium_per_1000_coverage_a": "same_year",
+    "dwelling_fire__form_share_of_admitted": "same_year",
+    "dwelling_fire__owner_occupied_share": "same_year",
+    "dwelling_fire__coverage_def_change": "same_year",
+    "dwelling_fire__mix_shift": "same_year",
+    "fair_plan__sources": "same_year",
+    "fair_plan__voluntary_dwelling_units": "same_year",
+    "fair_plan__fair_plan_dwelling_units": "same_year",
+    "fair_plan__fair_plan_share": "same_year",
+    "fair_plan__suppressed": "same_year",
+    "admitted_homeowners__premium_missing": "same_year",
+    "admitted_homeowners__premium_missing_reason": "same_year",
+    "admitted_homeowners__counts_missing": "same_year",
+    "admitted_homeowners__counts_missing_reason": "same_year",
+    "dwelling_fire__premium_missing": "same_year",
+    "dwelling_fire__premium_missing_reason": "same_year",
+    "fair_plan__share_missing": "same_year",
+    "fair_plan__share_missing_reason": "same_year",
+    "zhvi_months": "same_year",
+    "zhvi": "same_year",
+    "zhvi_real": "same_year",
+    "zhvi_missing": "same_year",
+    "zhvi_missing_reason": "same_year",
+    "acs_window": "acs_window_ending_in_year",
+    "acs_window_start": "acs_window_ending_in_year",
+    "zcta_vintage": "acs_window_ending_in_year",
+    "acs5_population": "acs_window_ending_in_year",
+    "acs5_population_moe": "acs_window_ending_in_year",
+    "acs5_households": "acs_window_ending_in_year",
+    "acs5_households_moe": "acs_window_ending_in_year",
+    "acs5_median_hh_income": "acs_window_ending_in_year",
+    "acs5_median_hh_income_moe": "acs_window_ending_in_year",
+    "acs5_median_hh_income_real": "acs_window_ending_in_year",
+    "acs5_median_hh_income_real_moe": "acs_window_ending_in_year",
+    "acs5_housing_units": "acs_window_ending_in_year",
+    "acs5_housing_units_moe": "acs_window_ending_in_year",
+    "acs5_vacant_units": "acs_window_ending_in_year",
+    "acs5_vacant_units_moe": "acs_window_ending_in_year",
+    "acs5_vacancy_rate": "acs_window_ending_in_year",
+    "acs5_vacancy_rate_moe": "acs_window_ending_in_year",
+    "acs_missing": "same_year",
+    "acs_missing_reason": "same_year",
+    "cdi_avg_fire_risk_2018": "fixed_vintage_2018",
+    "cdi_high_extreme_share_2018": "fixed_vintage_2018",
+    "cdi_risk_vintage_latest": "as_of_year",
+    "cdi_avg_fire_risk_latest": "as_of_year",
+    "cdi_high_extreme_share_latest": "as_of_year",
+    "wildfire_risk_missing": "same_year",
+    "wildfire_risk_missing_reason": "same_year",
+    "fire_damage_in_year": "same_year",
+    "burned_to_date": "as_of_year",
+    "years_since_first_burn": "as_of_year",
+    "x1_destruction_window": "as_of_year",
+    "moratorium_active_in_year": "same_year",
+    "moratoria_started_to_date": "as_of_year",
+    "wildfire_events_missing": "same_year",
+    "wildfire_events_missing_reason": "same_year",
+    "county_population": "same_year",
+    "county_income_pc_real": "same_year",
+    "county_permits": "same_year",
+    "controls_missing": "same_year",
+    "controls_missing_reason": "same_year",
+    "jump_flag__zhvi_real": "backward_difference",
+    "jump_flag__admitted_homeowners__avg_premium_per_exposure_real": "backward_difference",
+    "jump_flag__dwelling_fire__avg_premium_per_exposure_real": "backward_difference",
+    "jump_flag__admitted_homeowners__nonrenewal_rate": "backward_difference",
+    "jump_flag__county_population": "backward_difference",
+    "jump_flag_any": "backward_difference",
+    "complete_case": "same_year"
+  }
+}
