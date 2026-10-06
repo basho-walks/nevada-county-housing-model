@@ -1,0 +1,44 @@
+{
+  "A-Condo_v1.pdf": {
+    "url": "https://www.insurance.ca.gov/0400-news/0200-studies-reports/0250-homeowners-study/upload/A-Condo_v1.pdf",
+    "retrieved_at": "2026-10-05T23:10:37+00:00",
+    "sha256": "46acf8fe43650e7d096e8ecf5bb3c9dd3413cdae442d79e65353583cb59f71ee",
+    "size": 269425,
+    "license_note": "CDI public domain (https://www.insurance.ca.gov/privacy-policy/, Ownership); docs/sources.md S1"
+  },
+  "A-DF-Owner-Occupied_v1.pdf": {
+    "url": "https://www.insurance.ca.gov/0400-news/0200-studies-reports/0250-homeowners-study/upload/A-DF-Owner-Occupied_v1.pdf",
+    "retrieved_at": "2026-10-05T23:10:36+00:00",
+    "sha256": "9a420af3a1a2f3a7d26bf6aca571788b03164e7ae21fa18bfd83afc12b98d7ff",
+    "size": 252200,
+    "license_note": "CDI public domain (https://www.insurance.ca.gov/privacy-policy/, Ownership); docs/sources.md S1"
+  },
+  "A-DF-Rental-2_v1.pdf": {
+    "url": "https://www.insurance.ca.gov/0400-news/0200-studies-reports/0250-homeowners-study/upload/A-DF-Rental-2_v1.pdf",
+    "retrieved_at": "2026-10-05T23:10:37+00:00",
+    "sha256": "62879ea4cad1b9ad3654e9057b16b53c08f88a8c51113124d942e0e59f804ba6",
+    "size": 147145,
+    "license_note": "CDI public domain (https://www.insurance.ca.gov/privacy-policy/, Ownership); docs/sources.md S1"
+  },
+  "A-Homeowners-2_v1-2.pdf": {
+    "url": "https://www.insurance.ca.gov/0400-news/0200-studies-reports/0250-homeowners-study/upload/A-Homeowners-2_v1-2.pdf",
+    "retrieved_at": "2026-10-05T23:10:36+00:00",
+    "sha256": "c540bd4fc4b430d216a55fb6d67c9b8e8ef8c558f7f1b271184195fa2d298234",
+    "size": 250242,
+    "license_note": "CDI public domain (https://www.insurance.ca.gov/privacy-policy/, Ownership); docs/sources.md S1"
+  },
+  "A-Mobile-Homes_v1.pdf": {
+    "url": "https://www.insurance.ca.gov/0400-news/0200-studies-reports/0250-homeowners-study/upload/A-Mobile-Homes_v1.pdf",
+    "retrieved_at": "2026-10-05T23:10:37+00:00",
+    "sha256": "719818f4b93181d6657bfa981de42dac4698349a8585b523781662b8d2d3febb",
+    "size": 249165,
+    "license_note": "CDI public domain (https://www.insurance.ca.gov/privacy-policy/, Ownership); docs/sources.md S1"
+  },
+  "A-Renters_v1.pdf": {
+    "url": "https://www.insurance.ca.gov/0400-news/0200-studies-reports/0250-homeowners-study/upload/A-Renters_v1.pdf",
+    "retrieved_at": "2026-10-05T23:10:37+00:00",
+    "sha256": "5264b3cbe2eba64452da672f0b5afb37095f47e8837f4fe8d1c98216aacb5695",
+    "size": 254538,
+    "license_note": "CDI public domain (https://www.insurance.ca.gov/privacy-policy/, Ownership); docs/sources.md S1"
+  }
+}
