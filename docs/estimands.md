@@ -142,6 +142,12 @@ A California ZCTA is a candidate donor only if all of these hold, measured at ZC
 Thresholds are fixed and written in this file before any outcome comparison is run. The donor
 list is an output of these rules, stored with its rule version, not an input.
 
+Recorded values (PR #21, `analysis/donors.py`; see `docs/identification.md` section 1): hazard
+2018 S2 high/extreme share < 0.25; insurance change measured when >= 50% of W2 cells are present;
+low increase <= 0.01 nonrenewal rate and <= 0.10 log real premium; pre-period ends 2016, the year
+before the first register event on a target ZCTA. Deviations from the rules above: the hazard test
+uses only the 2018 S2 vintage, not every year 2018-2023, and the pre-period ends in 2016, not 2017.
+
 ## 6. Time alignment, deflator and ACS windows
 
 **Calendar year.** The panel year is the calendar year. Monthly series (Zillow ZHVI, CPI-U) are
