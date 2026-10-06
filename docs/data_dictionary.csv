@@ -53,9 +53,36 @@ housing_zip_year,zcta,string,5-digit code,ingest/keys.py,ZCTA 2020,key,none
 housing_zip_year,year,integer,calendar year,S11,ZCTA 2020,key,none
 housing_zip_year,policy_form,string,ALL,none,ZCTA 2020,key,none
 housing_zip_year,zip_source,string,5-digit USPS ZIP,S11,USPS ZIP,observed,none
+housing_zip_year,zcta_method,string,identity,ingest/keys.py,ZCTA 2020,derived,zhvi_missing
+housing_zip_year,zillow_region_id,integer,Zillow RegionID,S11,USPS ZIP,observed,zhvi_missing
+housing_zip_year,zillow_county,string,Zillow CountyName,S11,USPS ZIP,observed,zhvi_missing
+housing_zip_year,zhvi_product,string,Zillow ZHVI product name,S11,USPS ZIP,observed,zhvi_missing
+housing_zip_year,zhvi_revision,string,source file date YYYY-MM-DD,S11,USPS ZIP,observed,zhvi_missing
+housing_zip_year,zhvi_rule,string,annual rule code,ingest/housing.py,ZCTA 2020,derived,zhvi_missing
+housing_zip_year,zhvi_months,integer,months with data in year,S11,ZCTA 2020,derived,none
 housing_zip_year,zhvi,float,USD nominal (calendar-year mean of 10+ months),S11,ZCTA 2020,crosswalked,zhvi_missing
 housing_zip_year,zhvi_real,float,USD of BASE_YEAR,S11 and S16 CPIAUCSL,ZCTA 2020,derived,zhvi_missing
-housing_zip_year,zhvi_months,integer,months with data in year,S11,ZCTA 2020,derived,none
+housing_zip_year,zhvi_missing,integer,missing code (schema.md section 7),ingest/housing.py,ZCTA 2020,derived,none
+housing_zip_year,acs_window,string,YYYY-YYYY 5-year window,S13,ZCTA 2020,observed,acs_missing
+housing_zip_year,acs_window_start,integer,first year of 5-year window,S13,ZCTA 2020,observed,acs_missing
+housing_zip_year,zcta_vintage,integer,2010 or 2020,S13,ZCTA,observed,acs_missing
+housing_zip_year,population,float,persons (5-year average),S13 B01003,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,population_moe,float,persons,S13 B01003,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,households,float,households (5-year average),S13 B11001,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,households_moe,float,households,S13 B11001,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,median_hh_income,float,USD of window end year,S13 B19013,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,median_hh_income_moe,float,USD of window end year,S13 B19013,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,median_hh_income_real,float,USD of BASE_YEAR,S13 B19013 and S16 CPIAUCSL,ZCTA 2020,derived,acs_missing
+housing_zip_year,median_hh_income_real_moe,float,USD of BASE_YEAR,S13 B19013 and S16 CPIAUCSL,ZCTA 2020,derived,acs_missing
+housing_zip_year,housing_units,float,housing units (5-year average),S13 B25001,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,housing_units_moe,float,housing units,S13 B25001,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,vacant_units,float,housing units (5-year average),S13 B25002 line 3,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,vacant_units_moe,float,housing units,S13 B25002 line 3,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,vacancy_rate,float,share 0-1,S13 B25002 lines 3 and 1,ZCTA 2020,derived,acs_missing
+housing_zip_year,vacancy_rate_moe,float,share 0-1,S13 B25002 lines 3 and 1,ZCTA 2020,derived,acs_missing
+housing_zip_year,acs_missing,integer,missing code (schema.md section 7),ingest/housing.py,ZCTA 2020,derived,none
+housing_zip_year,candidate_spillover_source,integer,0 or 1,ingest/housing.py,ZCTA 2020,derived,none
+housing_zip_year,spillover_screen,string,screen version,ingest/housing.py,ZCTA 2020,derived,none
 acs_zcta,zcta,string,5-digit code,ingest/keys.py,ZCTA 2020,key,none
 acs_zcta,year,integer,last year of 5-year window,S13,ZCTA 2020,key,none
 acs_zcta,policy_form,string,ALL,none,ZCTA 2020,key,none

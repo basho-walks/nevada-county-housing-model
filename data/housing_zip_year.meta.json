@@ -1,0 +1,66 @@
+{
+  "table": "housing_zip_year.csv",
+  "key": [
+    "zcta",
+    "year"
+  ],
+  "canonical_key": [
+    "zcta",
+    "year",
+    "policy_form"
+  ],
+  "zhvi_product": "zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month",
+  "zhvi_revision": [
+    "2026-09-16"
+  ],
+  "zhvi_units": "USD nominal (zhvi); USD of BASE_YEAR (zhvi_real), not index points",
+  "zhvi_annual_rule": "calendar-year mean of monthly values, kept only when the year has 10+ months (fetch_data.annual_mean)",
+  "zhvi_geography": "Zillow ZIP mapped to 2020 ZCTA by identity (docs/schema.md 4.1)",
+  "deflator": "CPI-U CPIAUCSL annual mean from data/national_annual.csv; real = nominal * CPI[2025] / CPI[year]",
+  "base_year": 2025,
+  "acs_windows": [
+    "2017-2021",
+    "2018-2022",
+    "2019-2023",
+    "2020-2024"
+  ],
+  "acs_rule": "year = last year of the 5-year window; adjacent windows share 4 years and are not annual observations",
+  "acs_dollars": "median_hh_income in dollars of the window end year; real column deflated with CPI of that year",
+  "missing_codes": "docs/schema.md section 7",
+  "spillover": {
+    "screen": "provisional_v0",
+    "counties": [
+      "Alameda County",
+      "Contra Costa County",
+      "San Francisco County",
+      "San Mateo County",
+      "Santa Clara County"
+    ],
+    "excluded_zctas": {
+      "94611": "Oakland hills",
+      "94618": "Oakland hills",
+      "94619": "Oakland hills",
+      "94705": "Berkeley hills",
+      "94708": "Berkeley hills",
+      "94563": "Orinda hills",
+      "94556": "Moraga hills",
+      "94020": "Santa Cruz Mountains",
+      "94028": "Santa Cruz Mountains",
+      "94060": "Santa Cruz Mountains",
+      "94062": "Santa Cruz Mountains",
+      "94074": "Santa Cruz Mountains",
+      "95030": "Santa Cruz Mountains",
+      "95033": "Santa Cruz Mountains",
+      "95070": "Santa Cruz Mountains",
+      "95120": "Santa Cruz Mountains",
+      "95140": "Mount Hamilton (2020 SCU complex)"
+    },
+    "use": "candidate demand-spillover source; never a control or donor"
+  },
+  "rows": 39400,
+  "zctas": 1802,
+  "unmatched_zillow_zips": [
+    "95424",
+    "95433"
+  ]
+}

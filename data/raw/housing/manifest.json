@@ -1,0 +1,149 @@
+{
+  "acs5y2021_b01003.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2021/table-based-SF/data/5YRData/acsdt5y2021-b01003.dat",
+    "retrieved_at": "2026-10-05T23:06:44+00:00",
+    "sha256": "79bdcc3b0ba85ae7178d74f5f38da952bcc206388a4aeef951dc2c2c1406c03a",
+    "size": 46217,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2021_b11001.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2021/table-based-SF/data/5YRData/acsdt5y2021-b11001.dat",
+    "retrieved_at": "2026-10-05T23:06:47+00:00",
+    "sha256": "0ecf4bc6fe4568c9ec26d295447328cb4db4722efa8dbcf9291043024a8e7725",
+    "size": 156048,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2021_b19013.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2021/table-based-SF/data/5YRData/acsdt5y2021-b19013.dat",
+    "retrieved_at": "2026-10-05T23:06:48+00:00",
+    "sha256": "aed0b791999d0cd28cac55ddf136c13465559ccfbf9cb0fd12b1471d3817905a",
+    "size": 52053,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2021_b25001.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2021/table-based-SF/data/5YRData/acsdt5y2021-b25001.dat",
+    "retrieved_at": "2026-10-05T23:06:49+00:00",
+    "sha256": "c9137607e55b9322620e1530bf8b1deae046e6d679650b0149c8a908d79a3a35",
+    "size": 44674,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2021_b25002.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2021/table-based-SF/data/5YRData/acsdt5y2021-b25002.dat",
+    "retrieved_at": "2026-10-05T23:06:51+00:00",
+    "sha256": "a165aa5d64d281eabe138e4f60227ee67adcee6ec7b0672aae09279b6844b120",
+    "size": 73895,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2022_b01003.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b01003.dat",
+    "retrieved_at": "2026-10-05T23:06:52+00:00",
+    "sha256": "ff63e23003acfddeaa4d47f4d10b100669548a852b8fb72645fbeac1ccdcf7e8",
+    "size": 46217,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2022_b11001.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b11001.dat",
+    "retrieved_at": "2026-10-05T23:06:55+00:00",
+    "sha256": "d5584128f7204ff2c5548e2332047e7dd8c9ffbac05142d33298875079ebb42b",
+    "size": 156267,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2022_b19013.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b19013.dat",
+    "retrieved_at": "2026-10-05T23:06:57+00:00",
+    "sha256": "f7d809d2b9f9a760749ad55cb3ece5a90f2e8fe08393112c1a75000724500af8",
+    "size": 52303,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2022_b25001.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b25001.dat",
+    "retrieved_at": "2026-10-05T23:06:58+00:00",
+    "sha256": "c3aa78dd2bbdacda79ce45ff01aecc6abc11266e8a00e7aac1757fb198554bb1",
+    "size": 44707,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2022_b25002.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/5YRData/acsdt5y2022-b25002.dat",
+    "retrieved_at": "2026-10-05T23:06:59+00:00",
+    "sha256": "41b21420b839ca86bd980921a508621c6530200b3b6ed5a16074d58c172cc07f",
+    "size": 73965,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2023_b01003.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b01003.dat",
+    "retrieved_at": "2026-10-05T23:07:01+00:00",
+    "sha256": "fcbe318db99788689b68b94f05fbdb276db9a27e6dcb2964ab71cf5ae6a5b162",
+    "size": 46216,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2023_b11001.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b11001.dat",
+    "retrieved_at": "2026-10-05T23:07:04+00:00",
+    "sha256": "2ca769733a9f7f931d0f25e005884c04cda46811292d8edbd8d09a97fc69c7ae",
+    "size": 156300,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2023_b19013.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b19013.dat",
+    "retrieved_at": "2026-10-05T23:07:05+00:00",
+    "sha256": "94b428a9ac7c5b29021ea312b4dafb5e2758ad01ddca8bebd08d9ac462520797",
+    "size": 52507,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2023_b25001.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b25001.dat",
+    "retrieved_at": "2026-10-05T23:07:06+00:00",
+    "sha256": "78b804da2e0fb615ba8d70313379afccff983f029e35f100940828a91ab3c8b4",
+    "size": 44721,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2023_b25002.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/acsdt5y2023-b25002.dat",
+    "retrieved_at": "2026-10-05T23:07:07+00:00",
+    "sha256": "f9472829ac73573b8352fff22c4e2a01eead433a47c11ed00208c0e6db752384",
+    "size": 73988,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2024_b01003.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b01003.dat",
+    "retrieved_at": "2026-10-05T23:07:09+00:00",
+    "sha256": "fe949b0df19ea69635125e5620603b93c33bcad1e02d6f001597063e59c8e794",
+    "size": 46181,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2024_b11001.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b11001.dat",
+    "retrieved_at": "2026-10-05T23:07:13+00:00",
+    "sha256": "72bffcb20692473b05ce17528b8405942823f6d9decac0f0f0722544d0d5a4b2",
+    "size": 156438,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2024_b19013.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b19013.dat",
+    "retrieved_at": "2026-10-05T23:07:14+00:00",
+    "sha256": "f6646b644488c29f8c2f868ff27d228cfda87919f6b2cd77987c74d15844733d",
+    "size": 52648,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2024_b25001.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25001.dat",
+    "retrieved_at": "2026-10-05T23:07:16+00:00",
+    "sha256": "cc63466cd728a13c9d3b8c326ec48fa7a74fb03a3947e8ac993abf83cb949eef",
+    "size": 44709,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "acs5y2024_b25002.csv": {
+    "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25002.dat",
+    "retrieved_at": "2026-10-05T23:07:17+00:00",
+    "sha256": "ac2a80a5b1d5e2c6fb8e90a8a4eb0d7949e0cee3e332ca31e24312da5be0ede5",
+    "size": 73946,
+    "license_note": "U.S. Census Bureau, public domain; CA 2020 ZCTA rows only"
+  },
+  "zillow_zip_zhvi_ca_monthly.csv": {
+    "url": "https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv",
+    "retrieved_at": "2026-10-05T23:06:43+00:00",
+    "sha256": "de36ff6f9b028649846660e564bf6c74045018c0624bb1e3e752df1b8a6bef12",
+    "size": 8561730,
+    "license_note": "Zillow Terms of Use 4.C; cite 'Data Provided by Zillow Group'; source Last-Modified Wed, 16 Sep 2026 02:11:04 GMT; CA rows only"
+  }
+}

@@ -4,3 +4,4 @@ __pycache__/
 claude-*.json
 *.zip
 data/raw/restricted/
+data/raw/housing/zillow_*.csv
