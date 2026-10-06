@@ -1,26 +1,40 @@
 table,column,type,unit,source,geography,lineage,missing_flag
 insurance_zip_year,zcta,string,5-digit code,ingest/keys.py,ZCTA 2020,key,none
-insurance_zip_year,year,integer,calendar year,S2 S3,ZCTA 2020,key,none
-insurance_zip_year,policy_form,string,HO RT CO MH DO DT or ALL,S2,ZCTA 2020,key,none
-insurance_zip_year,zip_source,string,5-digit USPS ZIP,S2 S3,USPS ZIP,observed,none
+insurance_zip_year,year,integer,calendar year,S2 S3 S6,ZCTA 2020,key,none
+insurance_zip_year,policy_form,string,admitted_homeowners dwelling_fire fair_plan or supplemental,S2 S3 S6,ZCTA 2020,key,none
+insurance_zip_year,zip_source,string,5-digit USPS ZIP,S2 S3 S6,USPS ZIP,observed,none
 insurance_zip_year,zcta_method,string,identity or crosswalk,ingest/keys.py,ZCTA 2020,derived,none
 insurance_zip_year,xw_weight,float,share 0-1,xw_zip_zcta,ZCTA 2020,derived,xw_incomplete
-insurance_zip_year,earned_premium,float,USD nominal,S2 All Companies,ZCTA 2020,crosswalked,premium_missing
-insurance_zip_year,earned_premium_real,float,USD of BASE_YEAR,S2 and S16 CPIAUCSL,ZCTA 2020,derived,premium_missing
-insurance_zip_year,earned_exposure,float,house-years,S2 All Companies,ZCTA 2020,crosswalked,premium_missing
-insurance_zip_year,avg_premium_real,float,USD of BASE_YEAR per house-year,S2 and S16 CPIAUCSL,ZCTA 2020,derived,premium_missing
-insurance_zip_year,avg_coverage_a,float,USD nominal,S2 All Companies,ZCTA 2020,crosswalked,coverage_missing
-insurance_zip_year,coverage_basis,string,end_of_year (2018-2020) or start_of_year (2021+),S2 methodology,ZCTA 2020,derived,none
-insurance_zip_year,exposure_high_extreme_share,float,share 0-1,S2 Fire Risk Scores,ZCTA 2020,derived,risk_missing
-insurance_zip_year,policies_new,integer,policy count,S3,ZCTA 2020,crosswalked,counts_missing
-insurance_zip_year,policies_renewed,integer,policy count,S3,ZCTA 2020,crosswalked,counts_missing
-insurance_zip_year,nonrenewed_total,integer,policy count,S3,ZCTA 2020,crosswalked,counts_missing
-insurance_zip_year,nonrenewed_insurer,integer,policy count,S3 2015-2021 vintage,ZCTA 2020,crosswalked,counts_missing
-insurance_zip_year,nonrenewed_insured,integer,policy count,S3 2015-2021 vintage,ZCTA 2020,crosswalked,counts_missing
-insurance_zip_year,nonrenewal_rate,float,share 0-1,S3,ZCTA 2020,derived,counts_missing
-insurance_zip_year,s3_vintage,string,2015-2021 or 2020-2023,S3,ZCTA 2020,observed,none
-insurance_zip_year,series_break_2020,integer,0 or 1,S3 footnote,ZCTA 2020,derived,none
-insurance_zip_year,fair_plan_share_2022,float,share 0-1,S6,ZCTA 2020,crosswalked,fair_share_missing
+insurance_zip_year,sources,string,semicolon list of S2 S3 S6,ingest/insurance.py,ZCTA 2020,derived,none
+insurance_zip_year,exposure_unit,string,earned_house_years (S2) or dwelling_units (S6),S2 S6,ZCTA 2020,derived,premium_missing
+insurance_zip_year,exposures,float,earned house-years (S2) or dwelling units (S6) per exposure_unit,S2 All Companies or S6,ZCTA 2020,crosswalked,premium_missing
+insurance_zip_year,premium_basis,string,earned,S2 methodology,ZCTA 2020,derived,premium_missing
+insurance_zip_year,written_premium,float,USD nominal (deflated to BASE_YEAR downstream),not published at ZIP (S2 is earned),ZCTA 2020,crosswalked,premium_missing
+insurance_zip_year,earned_premium,float,USD nominal (deflated to BASE_YEAR downstream),S2 All Companies,ZCTA 2020,crosswalked,premium_missing
+insurance_zip_year,avg_premium_per_exposure,float,USD nominal (deflated to BASE_YEAR downstream) per earned house-year,S2 All Companies,ZCTA 2020,derived,premium_missing
+insurance_zip_year,avg_coverage_a,float,USD nominal (deflated to BASE_YEAR downstream); exposure-weighted across DO and DT,S2 All Companies,ZCTA 2020,crosswalked,coverage_missing
+insurance_zip_year,avg_coverage_c,float,USD nominal (deflated to BASE_YEAR downstream); exposure-weighted across DO and DT,S2 All Companies,ZCTA 2020,crosswalked,coverage_missing
+insurance_zip_year,coverage_basis,string,end_of_year (2018-2020) or start_of_year (2021+),S2 methodology,ZCTA 2020,derived,coverage_missing
+insurance_zip_year,premium_per_1000_coverage_a,float,USD per 1000 USD of Coverage A (ratio of same-year nominal values),S2 All Companies,ZCTA 2020,derived,coverage_missing
+insurance_zip_year,form_share_of_admitted,float,share 0-1 of admitted earned exposure,S2 All Companies,ZCTA 2020,derived,premium_missing
+insurance_zip_year,owner_occupied_share,float,share 0-1 of dwelling_fire exposure (DO over DO+DT),S2 All Companies,ZCTA 2020,derived,premium_missing
+insurance_zip_year,policies_new,float,policy count,S3,ZCTA 2020,crosswalked,counts_missing
+insurance_zip_year,policies_renewed,float,policy count,S3,ZCTA 2020,crosswalked,counts_missing
+insurance_zip_year,nonrenewed_total,float,policy count,S3,ZCTA 2020,crosswalked,counts_missing
+insurance_zip_year,nonrenewed_insurer,float,policy count,S3 2015-2021 vintage,ZCTA 2020,crosswalked,counts_missing
+insurance_zip_year,nonrenewed_insured,float,policy count,S3 2015-2021 vintage,ZCTA 2020,crosswalked,counts_missing
+insurance_zip_year,nonrenewal_rate,float,share 0-1 of renewed+nonrenewed,S3,ZCTA 2020,derived,counts_missing
+insurance_zip_year,nonrenewal_scope,string,voluntary_market_all_forms,S3,ZCTA 2020,derived,counts_missing
+insurance_zip_year,s3_vintage,string,2015-2021 or 2020-2023,S3,ZCTA 2020,observed,counts_missing
+insurance_zip_year,series_break,boolean,True in 2020 (S3 vintage change),S3 footnote,ZCTA 2020,derived,none
+insurance_zip_year,voluntary_dwelling_units,float,dwelling units,S6,ZCTA 2020,crosswalked,fair_share_missing
+insurance_zip_year,fair_plan_dwelling_units,float,dwelling units,S6,ZCTA 2020,crosswalked,fair_share_missing
+insurance_zip_year,fair_plan_share,float,share 0-1 of voluntary+FAIR Plan dwelling units,S6,ZCTA 2020,derived,fair_share_missing
+insurance_zip_year,denominator_source,string,semicolon list of rate=denominator,ingest/insurance.py,ZCTA 2020,derived,none
+insurance_zip_year,suppressed,boolean,True when CDI omits the ZIP (fewer than 5 structures),S6,ZCTA 2020,derived,none
+insurance_zip_year,coverage_def_change,boolean,True in 2021 (S2 coverage basis change),S2 methodology,ZCTA 2020,derived,none
+insurance_zip_year,mix_shift,boolean,True when form or owner-occupied share moves past threshold year on year,S2 All Companies,ZCTA 2020,derived,none
+insurance_zip_year,combined_premium_unavailable,boolean,True for fair_plan and supplemental or when earned_premium is missing,ingest/insurance.py,ZCTA 2020,derived,none
 insurance_county_year,county_fips,string,5-digit FIPS,S4 S5,county,key,none
 insurance_county_year,year,integer,calendar year,S4 S5,county,key,none
 insurance_county_year,policy_form,string,HO RT CO MH DO DT or ALL,S4 S5,county,key,none

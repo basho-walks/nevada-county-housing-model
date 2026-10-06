@@ -1,0 +1,16 @@
+{
+  "Format-of-the-Report-and-Methodology.docx": {
+    "url": "https://www.insurance.ca.gov/01-consumers/200-wrr/upload/Format-of-the-Report-and-Methodology.docx",
+    "retrieved_at": "2026-10-05T23:10:40+00:00",
+    "sha256": "ee879bce1540aec040030be9b70a9c0ec4d35e5718714e728b4cb8e63ade0d6d",
+    "size": 26702,
+    "license_note": "CDI public domain (https://www.insurance.ca.gov/privacy-policy/, Ownership); docs/sources.md S1"
+  },
+  "Residential-Property-Coverage-Amounts-Wildfire-Risk-and-Losses.xlsx": {
+    "url": "https://www.insurance.ca.gov/01-consumers/200-wrr/upload/Residential-Property-Coverage-Amounts-Wildfire-Risk-and-Losses.xlsx",
+    "retrieved_at": "2026-10-05T23:10:40+00:00",
+    "sha256": "1db226b44fbcccae99afff2f6732dae6f656913425d17930df5ff93e7237cf70",
+    "size": 7235628,
+    "license_note": "CDI public domain (https://www.insurance.ca.gov/privacy-policy/, Ownership); docs/sources.md S1"
+  }
+}
