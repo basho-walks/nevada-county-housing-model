@@ -536,7 +536,7 @@ def check_dollar_units(df: pd.DataFrame) -> None:
 
 
 COLUMNS = [
-    "zcta", "year", "policy_form", "zip_source", "zcta_method", "zcta_weight", "sources",
+    "zcta", "year", "policy_form", "zip_source", "zcta_method", "xw_weight", "sources",
     "exposure_unit", "exposures", "premium_basis", "written_premium", "earned_premium",
     "avg_premium_per_exposure", "avg_coverage_a", "avg_coverage_c", "coverage_basis",
     "premium_per_1000_coverage_a", "form_share_of_admitted", "owner_occupied_share",
@@ -629,7 +629,7 @@ def build_panel(s2: pd.DataFrame, s3_frames: list[pd.DataFrame], s6: pd.DataFram
         s3_zy = set(zip(b["zip"], b["year"])) if not b.empty else set()
         rows = pd.concat([rows, _s6_rows(s6, s3_zy)], ignore_index=True)
     for c in COLUMNS:
-        if c not in rows.columns and c not in ("zcta", "zip_source", "zcta_method", "zcta_weight"):
+        if c not in rows.columns and c not in ("zcta", "zip_source", "zcta_method", "xw_weight"):
             rows[c] = np.nan
     for flag in ("s2", "s3", "s6"):
         rows[flag] = rows[flag].eq(True) if flag in rows else False

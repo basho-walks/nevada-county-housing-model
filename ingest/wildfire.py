@@ -199,7 +199,7 @@ def fire_events(dins: pd.DataFrame, incidents: pd.DataFrame) -> pd.DataFrame:
     dmg = dins[dins["damage"].str.startswith(DAMAGED)]
     rows = []
     for (name, start), grp in dmg.groupby(["incident_name", "incident_start"]):
-        start_d = date.fromisoformat(start)
+        start_d = _parse_date(start, f"DINS incident {name}")
         match = _match_incident(incidents, name, start_d)
         zctas = sorted(z for z in grp["zcta"].dropna().unique() if z)
         destroyed = int(grp["damage"].str.startswith("Destroyed").sum())
@@ -245,12 +245,19 @@ def _base_name(name: str) -> str:
     return re.sub(r"\bfire\b|[^a-z0-9 ]", "", name).strip()
 
 
+def _parse_date(value: str, record: str) -> date:
+    try:
+        return date.fromisoformat(value)
+    except ValueError as e:
+        raise ValueError(f"{record}: bad or blank start date {value!r}") from e
+
+
 def _match_incident(incidents: pd.DataFrame, name: str, start: date):
     base = _base_name(name)
     cand = incidents[incidents["name"].map(_base_name) == base]
     if cand.empty:
         return None
-    gap = cand["date_start"].map(lambda d: abs((date.fromisoformat(d) - start).days))
+    gap = cand.apply(lambda r: abs((_parse_date(r["date_start"], f"CAL FIRE incident {r['name']}") - start).days), axis=1)
     if gap.min() > 3:
         return None
     return cand.loc[gap.idxmin()]

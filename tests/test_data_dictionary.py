@@ -16,9 +16,11 @@ def test_data_dictionary_shape():
 
 def test_data_dictionary_has_target_tables_with_full_key():
     d = pd.read_csv(DICT, dtype=str, keep_default_na=False)
-    for table in ["insurance_zip_year", "housing_zip_year", "wildfire_zcta_year", "panel"]:
+    for table in ["insurance_zip_year", "housing_zip_year", "panel"]:
         cols = set(d.loc[d["table"] == table, "column"])
         assert {"zcta", "year", "policy_form"} <= cols, table
+    # wildfire_zip is a ZCTA cross-section with vintage columns, not a ZCTA-year table.
+    assert "zcta" in set(d.loc[d["table"] == "wildfire_zip", "column"])
 
 
 def test_county_columns_are_never_zip_observations():
