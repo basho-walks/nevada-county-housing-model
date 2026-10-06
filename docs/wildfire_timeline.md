@@ -40,6 +40,8 @@ ZCTA-to-county file, `AREALAND_PART > 0`). `geo_tier` is `core` or `fringe` as i
 excludes, and `region` for the other ZCTAs. The `region` rows are there for neighbor and donor
 checks. They are not target ZCTAs. `county_fips_main` is the county with the largest land share.
 `hu2020` is the 2020 Census housing-unit count (TIGERweb `HU100`).
+The table is a ZCTA cross-section keyed by `zcta` alone, with the vintage in each risk column
+name; it is not the ZCTA-year-policy_form table of `docs/schema.md` section 6.
 
 ### 2.2 Risk measures
 
@@ -53,8 +55,8 @@ Each risk measure has four label columns: `_source`, `_vintage`, `_aggregation_m
 | `cdi_high_extreme_share_2018` | calendar year 2018 | 1 | `(H+E) / (N+L+M+H+E)` summed over the same forms |
 | `cdi_high_extreme_share_2023` | calendar year 2023 | 0 | Same |
 
-- USPS ZIP to 2020 ZCTA by identity (`map_zip_to_zcta(..., zctas=...)`). 95712 and 95924 have no
-  ZCTA and go to the unmatched file.
+- USPS ZIP to 2020 ZCTA by identity (`map_zip_to_zcta(..., zctas=...)`). 95712, 95724, 95924,
+  96160 and 96162 have no 2020 ZCTA in the S14 file and go to the unmatched file.
 - `FP` rows are dropped (`docs/schema.md` section 6). Rows with a blank score or no scored
   policies are dropped before weighting. `cdi_risk_missing = 1` when either vintage is blank.
 - 2018 is the earliest S2 year. It is labeled pre-treatment because it is before the first SB 824

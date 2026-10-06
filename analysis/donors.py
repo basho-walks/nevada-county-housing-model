@@ -41,7 +41,7 @@ DEMAND_ROLE = "spillover_source"
 
 INSURANCE_COLS = {
     "nonrenewal": "admitted_homeowners__nonrenewal_rate",
-    "premium": "admitted_homeowners__avg_premium_per_exposure_real_2025",
+    "premium": "admitted_homeowners__avg_premium_per_exposure_real",
     "fair_share": "fair_plan__fair_plan_share",
 }
 
@@ -222,7 +222,7 @@ def donor_table(panel: pd.DataFrame, events: pd.DataFrame, win: Windows) -> pd.D
     static = static[static.panel_role != TARGET_ROLE]
 
     zhvi = panel.loc[panel.year.isin(fit_years)].pivot(
-        index="zcta", columns="year", values="zhvi_real_2025"
+        index="zcta", columns="year", values="zhvi_real"
     )
     complete = zhvi.notna().all(axis=1).reindex(static.index, fill_value=False)
 
@@ -318,7 +318,7 @@ def donor_table(panel: pd.DataFrame, events: pd.DataFrame, win: Windows) -> pd.D
 def fit_years_for(panel: pd.DataFrame, treated: list[str], pre_end: int) -> list[int]:
     """Pre-period years in which every treated ZCTA with any pre-period ZHVI has a value."""
     pre = panel[(panel.year <= pre_end) & panel.zcta.isin(treated)]
-    wide = pre.pivot(index="year", columns="zcta", values="zhvi_real_2025")
+    wide = pre.pivot(index="year", columns="zcta", values="zhvi_real")
     wide = wide.loc[:, wide.notna().any()]
     return [int(y) for y in wide.index[wide.notna().all(axis=1)]]
 
@@ -326,7 +326,7 @@ def fit_years_for(panel: pd.DataFrame, treated: list[str], pre_end: int) -> list
 def log_zhvi_wide(panel: pd.DataFrame, zctas: list[str], years: list[int]) -> pd.DataFrame:
     """Rows ZCTA, columns year; rows filtered to the requested years before pivoting."""
     sub = panel[panel.zcta.isin(zctas) & panel.year.isin(years)]
-    wide = sub.pivot(index="zcta", columns="year", values="zhvi_real_2025")
+    wide = sub.pivot(index="zcta", columns="year", values="zhvi_real")
     return np.log(wide.reindex(index=zctas, columns=years))
 
 
@@ -465,7 +465,7 @@ def unit_covariates(panel: pd.DataFrame, zctas: list[str], fit_years: list[int])
     df["S2 high/extreme share 2018"] = static.risk18.reindex(zctas)
     df["S2 avg risk score 2018"] = static.avg_risk18.reindex(zctas)
     df["ACS 2017-21 log median HH income (real)*"] = np.log(
-        acs.acs5_median_hh_income_real_2025.reindex(zctas)
+        acs.acs5_median_hh_income_real.reindex(zctas)
     )
     df["ACS 2017-21 vacancy rate*"] = acs.acs5_vacancy_rate.reindex(zctas)
     return df
@@ -515,7 +515,7 @@ def demand_linkage(panel: pd.DataFrame, treated: list[str], fits: dict[str, Pool
 
 def timing_table(panel: pd.DataFrame, win: Windows) -> pd.DataFrame:
     targets = panel[panel.panel_role == TARGET_ROLE].groupby("zcta").agg(tier=("geo_tier", "first"))
-    first_zhvi = panel[panel.zhvi_real_2025.notna()].groupby("zcta").year.min()
+    first_zhvi = panel[panel.zhvi_real.notna()].groupby("zcta").year.min()
     rows = []
     for z, r in targets.iterrows():
         w1a, w1b = win.w1a.get(z), win.w1b.get(z)

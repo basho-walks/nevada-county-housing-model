@@ -7,7 +7,7 @@ import pandas as pd
 import pytest
 
 from ingest import insurance as ins
-from ingest.keys import DuplicateKeyError
+from ingest.keys import DuplicateKeyError, canonical_keys
 
 FIX = Path(__file__).parent / "fixtures" / "insurance"
 S2 = FIX / "s2_sb824_pivot_2020_2021.xlsx"
@@ -126,6 +126,11 @@ def test_panel_key_and_forms(panel):
     assert not out.duplicated(list(ins.KEY)).any()
     assert set(out["policy_form"]) <= set(ins.POLICY_FORMS)
     assert list(out.columns) == ins.COLUMNS
+
+
+def test_panel_passes_canonical_keys(panel):
+    out, _ = panel
+    assert canonical_keys(out)["policy_form"].tolist() == out["policy_form"].tolist()
 
 
 def test_dwelling_fire_combines_owner_and_tenant(panel):

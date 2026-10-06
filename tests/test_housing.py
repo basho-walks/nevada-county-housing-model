@@ -71,13 +71,13 @@ def test_annual_align_matches_fetch_data_rule():
 
 
 def test_monthly_to_annual_alignment_on_fixture(panel):
-    assert panel.loc[("95945", 2023), "zhvi_nominal"] == pytest.approx(105500.0)
+    assert panel.loc[("95945", 2023), "zhvi"] == pytest.approx(105500.0)
     assert panel.loc[("95945", 2023), "zhvi_months"] == 12
     # A missing June still leaves 11 months, so 2024 is kept as the mean of the months present.
-    assert panel.loc[("95945", 2024), "zhvi_nominal"] == pytest.approx(200000.0)
+    assert panel.loc[("95945", 2024), "zhvi"] == pytest.approx(200000.0)
     assert panel.loc[("95945", 2024), "zhvi_months"] == 11
     for key in [("95945", 2025), ("96161", 2024)]:
-        assert pd.isna(panel.loc[key, "zhvi_nominal"])
+        assert pd.isna(panel.loc[key, "zhvi"])
         assert panel.loc[key, "zhvi_missing"] == 5
     assert panel.loc[("95945", 2025), "zhvi_months"] == 3
     assert set(panel["zhvi_rule"].dropna()) == {H.ANNUAL_RULE_CODE}
@@ -86,6 +86,8 @@ def test_monthly_to_annual_alignment_on_fixture(panel):
 def test_schema(built):
     df, _ = built
     assert list(df.columns) == H.COLUMNS
+    dictionary = pd.read_csv(ROOT / "docs" / "data_dictionary.csv", dtype=str)
+    assert dictionary.loc[dictionary["table"] == "housing_zip_year", "column"].tolist() == H.COLUMNS
     assert df["zcta"].str.fullmatch(r"\d{5}").all()
     assert set(df["policy_form"]) == {"ALL"}
     assert df["year"].dtype.kind == "i"
@@ -107,16 +109,16 @@ def test_join_to_zcta_list_has_no_duplicate_keys(built, raw):
 
 def test_acs_only_zcta_has_no_zhvi(panel):
     row = panel.loc[("95959", 2024)]
-    assert pd.isna(row["zhvi_nominal"]) and row["zhvi_missing"] == 1
+    assert pd.isna(row["zhvi"]) and row["zhvi_missing"] == 1
     assert pd.isna(row["zip_source"])
 
 
 def test_units_are_dollars_and_real_uses_cpi(panel):
-    zhvi = panel["zhvi_nominal"].dropna()
+    zhvi = panel["zhvi"].dropna()
     assert (zhvi > 10000).all()  # dollars, not index points near 100
     cpi = {2023: 300.0, 2024: 310.0, 2025: 320.0}
-    for (z, y), row in panel.dropna(subset=["zhvi_nominal"]).iterrows():
-        assert row[f"zhvi{H.REAL}"] == pytest.approx(row["zhvi_nominal"] * cpi[2025] / cpi[y])
+    for (z, y), row in panel.dropna(subset=["zhvi"]).iterrows():
+        assert row[f"zhvi{H.REAL}"] == pytest.approx(row["zhvi"] * cpi[2025] / cpi[y])
     r = panel.loc[("95945", 2024)]
     assert r[f"median_hh_income{H.REAL}"] == pytest.approx(65989 * 320 / 310)
     assert r[f"median_hh_income{H.REAL}_moe"] == pytest.approx(4438 * 320 / 310)

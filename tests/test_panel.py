@@ -82,9 +82,9 @@ def test_no_imputation(panel, inputs):
     h = inputs["housing"].set_index(["zcta", "year"])
     p = panel.set_index(["zcta", "year"])
     both = p.index.intersection(h.index)
-    pd.testing.assert_series_equal(p.loc[both, "zhvi_nominal"], h.loc[both, "zhvi_nominal"], check_names=False)
+    pd.testing.assert_series_equal(p.loc[both, "zhvi"], h.loc[both, "zhvi"], check_names=False)
     pd.testing.assert_series_equal(p.loc[both, "acs5_population"], h.loc[both, "population"], check_names=False)
-    assert p.drop(both)["zhvi_nominal"].isna().all()
+    assert p.drop(both)["zhvi"].isna().all()
 
 
 def test_acs_values_only_on_window_end_year(panel):
@@ -104,7 +104,7 @@ def test_missing_codes_and_reasons(panel):
         assert (reason.str.len() > 0).all(), b
         assert (reason == "present").eq(panel[f"{b}_missing"] == 0).all(), b
     indicator = {block: f"{v[0]}__{v[1]}" for block, v in bp.INSURANCE_BLOCKS.items()}
-    indicator |= {"zhvi": "zhvi_nominal", "wildfire_risk": "cdi_avg_fire_risk_latest", "wildfire_events": "burned_to_date"}
+    indicator |= {"zhvi": "zhvi", "wildfire_risk": "cdi_avg_fire_risk_latest", "wildfire_events": "burned_to_date"}
     for b, col in indicator.items():
         assert panel[col].notna().eq(panel[f"{b}_missing"] == 0).all(), b
     assert (panel.loc[panel["acs_missing"] == 0, "acs5_population"].notna()).all()

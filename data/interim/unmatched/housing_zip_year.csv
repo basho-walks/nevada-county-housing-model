@@ -1,4 +1,4 @@
-zip,year,zhvi_nominal,zhvi_months,zillow_region_id,zillow_county
+zip,year,zhvi,zhvi_months,zillow_region_id,zillow_county
 95424,2007,167818.14,12,98188,Lake County
 95424,2008,155288.25,12,98188,Lake County
 95424,2009,134507.37,12,98188,Lake County

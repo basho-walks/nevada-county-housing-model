@@ -45,7 +45,7 @@ INPUTS = {
 SCHEMA_VERSION = 1  # docs/schema.md
 YEAR_MIN = 2000
 NEVADA_FIPS = "06057"
-REAL = f"_real_{BASE_YEAR}"
+REAL = "_real"
 FORMS = ("admitted_homeowners", "dwelling_fire", "fair_plan")
 
 # Columns kept per policy form. Constant metadata (exposure_unit, premium_basis, nonrenewal_scope,
@@ -75,7 +75,7 @@ INSURANCE_BLOCKS = {
     "fair_plan__share": ("fair_plan", "fair_plan_share", 2022, 2022, "S6"),
 }
 
-HOUSING_COLUMNS = ["zhvi_months", "zhvi_nominal", f"zhvi{REAL}"]
+HOUSING_COLUMNS = ["zhvi_months", "zhvi", f"zhvi{REAL}"]
 ACS_VALUES = [
     "population", "households", "median_hh_income", f"median_hh_income{REAL}", "housing_units", "vacant_units",
     "vacancy_rate",
@@ -431,7 +431,7 @@ def column_spec() -> list[dict]:
         spec += _missing_cols(block, f"build_panel.py ({s} coverage)")
     spec += [
         _c("zhvi_months", "integer", "months with ZHVI in year", "housing_zip_year (S11)", "derived", "zhvi_missing", "same_year"),
-        _c("zhvi_nominal", "float", "USD nominal (calendar-year mean of 10+ months)", "housing_zip_year (S11)", "crosswalked", "zhvi_missing", "same_year"),
+        _c("zhvi", "float", "USD nominal (calendar-year mean of 10+ months)", "housing_zip_year (S11)", "crosswalked", "zhvi_missing", "same_year"),
         _c(f"zhvi{REAL}", "float", f"USD of {BASE_YEAR}", "housing_zip_year (S11 and CPI-U)", "derived", "zhvi_missing", "same_year"),
         *_missing_cols("zhvi", "housing_zip_year zhvi_missing and build_panel.py"),
         _c("acs_window", "string", "5-year window, e.g. 2020-2024", "housing_zip_year (S13)", "observed", "acs_missing", "acs_window_ending_in_year"),

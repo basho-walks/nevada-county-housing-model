@@ -54,7 +54,7 @@ def test_weights_ignore_post_period_outcomes(inputs, spied_run):
     pre_end = result["windows"].pre_end
     shocked = panel.copy()
     post = shocked.year > pre_end
-    shocked.loc[post, "zhvi_real_2025"] = shocked.loc[post, "zhvi_real_2025"] * 3.0
+    shocked.loc[post, "zhvi_real"] = shocked.loc[post, "zhvi_real"] * 3.0
     a = result["fits"]["A_strict"]
     rerun = donors.fit_pool(shocked, "A_strict", a.donors, result["treated"], result["windows"])
     pd.testing.assert_series_equal(rerun.weights, a.weights)

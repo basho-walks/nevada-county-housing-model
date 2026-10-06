@@ -1,40 +1,40 @@
 table,column,type,unit,source,geography,lineage,missing_flag
 insurance_zip_year,zcta,string,5-digit code,ingest/keys.py,ZCTA 2020,key,none
-insurance_zip_year,year,integer,calendar year (S6: 2022 snapshot),S2 S3 S6,ZCTA 2020,key,none
-insurance_zip_year,policy_form,string,admitted_homeowners (S2 HO) dwelling_fire (S2 DO+DT) or fair_plan (S6),ingest/insurance.py,ZCTA 2020,key,none
+insurance_zip_year,year,integer,calendar year,S2 S3 S6,ZCTA 2020,key,none
+insurance_zip_year,policy_form,string,admitted_homeowners dwelling_fire fair_plan or supplemental,S2 S3 S6,ZCTA 2020,key,none
 insurance_zip_year,zip_source,string,5-digit USPS ZIP,S2 S3 S6,USPS ZIP,observed,none
-insurance_zip_year,zcta_method,string,identity,ingest/keys.py,ZCTA 2020,derived,none
-insurance_zip_year,zcta_weight,float,share 0-1 (1.0 for identity),ingest/keys.py,ZCTA 2020,derived,none
-insurance_zip_year,sources,string,source IDs separated by ;,ingest/insurance.py,ZCTA 2020,observed,none
-insurance_zip_year,exposure_unit,string,earned_house_years or dwelling_units,ingest/insurance.py,ZCTA 2020,derived,NaN when not published
-insurance_zip_year,exposures,float,earned house-years (S2) or dwelling units (S6),S2 All Companies or S6,ZCTA 2020,crosswalked,NaN when not published
-insurance_zip_year,premium_basis,string,earned,S2,ZCTA 2020,derived,NaN when not published
-insurance_zip_year,written_premium,float,USD nominal (not published at ZIP level; always empty),S2,ZCTA 2020,crosswalked,NaN when not published
-insurance_zip_year,earned_premium,float,USD nominal,S2 All Companies,ZCTA 2020,crosswalked,NaN when not published
-insurance_zip_year,avg_premium_per_exposure,float,USD nominal per earned house-year,S2 All Companies,ZCTA 2020,derived,NaN when not published
-insurance_zip_year,avg_coverage_a,float,USD nominal,S2 All Companies,ZCTA 2020,crosswalked,NaN when not published
-insurance_zip_year,avg_coverage_c,float,USD nominal,S2 All Companies,ZCTA 2020,crosswalked,NaN when not published
-insurance_zip_year,coverage_basis,string,end_of_year (2018-2020) or start_of_year (2021+),S2 methodology,ZCTA 2020,derived,NaN when not published
-insurance_zip_year,premium_per_1000_coverage_a,float,USD premium per USD 1000 of Coverage A,S2 All Companies,ZCTA 2020,derived,NaN when not published
-insurance_zip_year,form_share_of_admitted,float,share 0-1 of S2 admitted earned exposure,S2,ZCTA 2020,derived,NaN when not published
-insurance_zip_year,owner_occupied_share,float,share 0-1 of dwelling-fire earned exposure (DO / (DO+DT)),S2,ZCTA 2020,derived,NaN when not published
-insurance_zip_year,policies_new,float,policy count,S3,ZCTA 2020,crosswalked,NaN when not published
-insurance_zip_year,policies_renewed,float,policy count,S3,ZCTA 2020,crosswalked,NaN when not published
-insurance_zip_year,nonrenewed_total,float,policy count,S3,ZCTA 2020,crosswalked,NaN when not published
-insurance_zip_year,nonrenewed_insurer,float,policy count,S3 2015-2021 vintage,ZCTA 2020,crosswalked,NaN when not published
-insurance_zip_year,nonrenewed_insured,float,policy count,S3 2015-2021 vintage,ZCTA 2020,crosswalked,NaN when not published
-insurance_zip_year,nonrenewal_rate,float,share 0-1: nonrenewed_total / (policies_renewed + nonrenewed_total),S3,ZCTA 2020,derived,NaN when not published
-insurance_zip_year,nonrenewal_scope,string,voluntary_market_all_forms,S3,ZCTA 2020,derived,NaN when not published
-insurance_zip_year,s3_vintage,string,2015-2021 or 2020-2023,S3,ZCTA 2020,observed,NaN when not published
-insurance_zip_year,series_break,boolean,True in 2020 (S3 definition break),S3 footnote,ZCTA 2020,derived,none
-insurance_zip_year,voluntary_dwelling_units,float,dwelling units,S6,ZCTA 2020,crosswalked,NaN when not published
-insurance_zip_year,fair_plan_dwelling_units,float,dwelling units,S6,ZCTA 2020,crosswalked,NaN when not published
-insurance_zip_year,fair_plan_share,float,share 0-1,S6,ZCTA 2020,derived,suppressed
-insurance_zip_year,denominator_source,string,text naming the denominator of each rate,ingest/insurance.py,ZCTA 2020,derived,none
-insurance_zip_year,suppressed,boolean,True when S6 omits a ZIP with under 5 insured structures,S6,ZCTA 2020,derived,none
+insurance_zip_year,zcta_method,string,identity or crosswalk,ingest/keys.py,ZCTA 2020,derived,none
+insurance_zip_year,xw_weight,float,share 0-1,xw_zip_zcta,ZCTA 2020,derived,xw_incomplete
+insurance_zip_year,sources,string,semicolon list of S2 S3 S6,ingest/insurance.py,ZCTA 2020,derived,none
+insurance_zip_year,exposure_unit,string,earned_house_years (S2) or dwelling_units (S6),S2 S6,ZCTA 2020,derived,premium_missing
+insurance_zip_year,exposures,float,earned house-years (S2) or dwelling units (S6) per exposure_unit,S2 All Companies or S6,ZCTA 2020,crosswalked,premium_missing
+insurance_zip_year,premium_basis,string,earned,S2 methodology,ZCTA 2020,derived,premium_missing
+insurance_zip_year,written_premium,float,USD nominal (deflated to BASE_YEAR downstream),not published at ZIP (S2 is earned),ZCTA 2020,crosswalked,premium_missing
+insurance_zip_year,earned_premium,float,USD nominal (deflated to BASE_YEAR downstream),S2 All Companies,ZCTA 2020,crosswalked,premium_missing
+insurance_zip_year,avg_premium_per_exposure,float,USD nominal (deflated to BASE_YEAR downstream) per earned house-year,S2 All Companies,ZCTA 2020,derived,premium_missing
+insurance_zip_year,avg_coverage_a,float,USD nominal (deflated to BASE_YEAR downstream); exposure-weighted across DO and DT,S2 All Companies,ZCTA 2020,crosswalked,coverage_missing
+insurance_zip_year,avg_coverage_c,float,USD nominal (deflated to BASE_YEAR downstream); exposure-weighted across DO and DT,S2 All Companies,ZCTA 2020,crosswalked,coverage_missing
+insurance_zip_year,coverage_basis,string,end_of_year (2018-2020) or start_of_year (2021+),S2 methodology,ZCTA 2020,derived,coverage_missing
+insurance_zip_year,premium_per_1000_coverage_a,float,USD per 1000 USD of Coverage A (ratio of same-year nominal values),S2 All Companies,ZCTA 2020,derived,coverage_missing
+insurance_zip_year,form_share_of_admitted,float,share 0-1 of admitted earned exposure,S2 All Companies,ZCTA 2020,derived,premium_missing
+insurance_zip_year,owner_occupied_share,float,share 0-1 of dwelling_fire exposure (DO over DO+DT),S2 All Companies,ZCTA 2020,derived,premium_missing
+insurance_zip_year,policies_new,float,policy count,S3,ZCTA 2020,crosswalked,counts_missing
+insurance_zip_year,policies_renewed,float,policy count,S3,ZCTA 2020,crosswalked,counts_missing
+insurance_zip_year,nonrenewed_total,float,policy count,S3,ZCTA 2020,crosswalked,counts_missing
+insurance_zip_year,nonrenewed_insurer,float,policy count,S3 2015-2021 vintage,ZCTA 2020,crosswalked,counts_missing
+insurance_zip_year,nonrenewed_insured,float,policy count,S3 2015-2021 vintage,ZCTA 2020,crosswalked,counts_missing
+insurance_zip_year,nonrenewal_rate,float,share 0-1 of renewed+nonrenewed,S3,ZCTA 2020,derived,counts_missing
+insurance_zip_year,nonrenewal_scope,string,voluntary_market_all_forms,S3,ZCTA 2020,derived,counts_missing
+insurance_zip_year,s3_vintage,string,2015-2021 or 2020-2023,S3,ZCTA 2020,observed,counts_missing
+insurance_zip_year,series_break,boolean,True in 2020 (S3 vintage change),S3 footnote,ZCTA 2020,derived,none
+insurance_zip_year,voluntary_dwelling_units,float,dwelling units,S6,ZCTA 2020,crosswalked,fair_share_missing
+insurance_zip_year,fair_plan_dwelling_units,float,dwelling units,S6,ZCTA 2020,crosswalked,fair_share_missing
+insurance_zip_year,fair_plan_share,float,share 0-1 of voluntary+FAIR Plan dwelling units,S6,ZCTA 2020,derived,fair_share_missing
+insurance_zip_year,denominator_source,string,semicolon list of rate=denominator,ingest/insurance.py,ZCTA 2020,derived,none
+insurance_zip_year,suppressed,boolean,True when CDI omits the ZIP (fewer than 5 structures),S6,ZCTA 2020,derived,none
 insurance_zip_year,coverage_def_change,boolean,True in 2021 (S2 coverage basis change),S2 methodology,ZCTA 2020,derived,none
-insurance_zip_year,mix_shift,boolean,True when form or occupancy share moves above the ingest threshold vs year-1,S2,ZCTA 2020,derived,none
-insurance_zip_year,combined_premium_unavailable,boolean,True when no premium is published for the row,ingest/insurance.py,ZCTA 2020,derived,none
+insurance_zip_year,mix_shift,boolean,True when form or owner-occupied share moves past threshold year on year,S2 All Companies,ZCTA 2020,derived,none
+insurance_zip_year,combined_premium_unavailable,boolean,True for fair_plan and supplemental or when earned_premium is missing,ingest/insurance.py,ZCTA 2020,derived,none
 insurance_county_year,county_fips,string,5-digit FIPS,S4 S5,county,key,none
 insurance_county_year,year,integer,calendar year,S4 S5,county,key,none
 insurance_county_year,policy_form,string,HO RT CO MH DO DT or ALL,S4 S5,county,key,none
@@ -50,84 +50,92 @@ fair_plan_zip_fy,policy_form,string,ALL,S9,ZCTA 2020,key,none
 fair_plan_zip_fy,fair_plan_pif,integer,policies in force at 30 Sep,S9 (restricted),ZCTA 2020,crosswalked,fair_pif_missing
 fair_plan_zip_fy,fair_plan_tiv,float,USD nominal,S9 (restricted),ZCTA 2020,crosswalked,fair_pif_missing
 housing_zip_year,zcta,string,5-digit code,ingest/keys.py,ZCTA 2020,key,none
-housing_zip_year,year,integer,calendar year (ACS rows: last year of window),S11 S13,ZCTA 2020,key,none
+housing_zip_year,year,integer,calendar year,S11,ZCTA 2020,key,none
 housing_zip_year,policy_form,string,ALL,none,ZCTA 2020,key,none
-housing_zip_year,zip_source,string,5-digit USPS ZIP (Zillow RegionName),S11,USPS ZIP,observed,none
-housing_zip_year,zcta_method,string,identity,ingest/keys.py,ZCTA 2020,derived,none
+housing_zip_year,zip_source,string,5-digit USPS ZIP,S11,USPS ZIP,observed,none
+housing_zip_year,zcta_method,string,identity,ingest/keys.py,ZCTA 2020,derived,zhvi_missing
 housing_zip_year,zillow_region_id,integer,Zillow RegionID,S11,USPS ZIP,observed,zhvi_missing
-housing_zip_year,zillow_county,string,Zillow CountyName,S11,county,observed,zhvi_missing
-housing_zip_year,zhvi_product,string,Zillow product name,S11,ZCTA 2020,observed,zhvi_missing
-housing_zip_year,zhvi_revision,string,Last-Modified date of the Zillow file,S11,ZCTA 2020,observed,zhvi_missing
-housing_zip_year,zhvi_rule,string,mean_ge10m,fetch_data.annual_mean,ZCTA 2020,derived,zhvi_missing
-housing_zip_year,zhvi_months,integer,months with data in year,S11,ZCTA 2020,derived,zhvi_missing
-housing_zip_year,zhvi_nominal,float,USD nominal (calendar-year mean of 10+ months),S11,ZCTA 2020,crosswalked,zhvi_missing
-housing_zip_year,zhvi_real_2025,float,USD of BASE_YEAR (2025),S11 and S16 CPIAUCSL,ZCTA 2020,derived,zhvi_missing
-housing_zip_year,zhvi_missing,integer,0-5 code (docs/schema.md section 7),ingest/housing.py,ZCTA 2020,derived,none
-housing_zip_year,acs_window,string,"5-year window, e.g. 2020-2024",S13,ZCTA 2020,observed,acs_missing
+housing_zip_year,zillow_county,string,Zillow CountyName,S11,USPS ZIP,observed,zhvi_missing
+housing_zip_year,zhvi_product,string,Zillow ZHVI product name,S11,USPS ZIP,observed,zhvi_missing
+housing_zip_year,zhvi_revision,string,source file date YYYY-MM-DD,S11,USPS ZIP,observed,zhvi_missing
+housing_zip_year,zhvi_rule,string,annual rule code,ingest/housing.py,ZCTA 2020,derived,zhvi_missing
+housing_zip_year,zhvi_months,integer,months with data in year,S11,ZCTA 2020,derived,none
+housing_zip_year,zhvi,float,USD nominal (calendar-year mean of 10+ months),S11,ZCTA 2020,crosswalked,zhvi_missing
+housing_zip_year,zhvi_real,float,USD of BASE_YEAR,S11 and S16 CPIAUCSL,ZCTA 2020,derived,zhvi_missing
+housing_zip_year,zhvi_missing,integer,missing code (schema.md section 7),ingest/housing.py,ZCTA 2020,derived,none
+housing_zip_year,acs_window,string,YYYY-YYYY 5-year window,S13,ZCTA 2020,observed,acs_missing
 housing_zip_year,acs_window_start,integer,first year of 5-year window,S13,ZCTA 2020,observed,acs_missing
-housing_zip_year,zcta_vintage,integer,2020,S13,ZCTA,observed,acs_missing
+housing_zip_year,zcta_vintage,integer,2010 or 2020,S13,ZCTA,observed,acs_missing
 housing_zip_year,population,float,persons (5-year average),S13 B01003,ZCTA 2020,observed or crosswalked,acs_missing
-housing_zip_year,population_moe,float,"persons (5-year average), 90% margin of error",S13 B01003,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,population_moe,float,persons,S13 B01003,ZCTA 2020,observed or crosswalked,acs_missing
 housing_zip_year,households,float,households (5-year average),S13 B11001,ZCTA 2020,observed or crosswalked,acs_missing
-housing_zip_year,households_moe,float,"households (5-year average), 90% margin of error",S13 B11001,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,households_moe,float,households,S13 B11001,ZCTA 2020,observed or crosswalked,acs_missing
 housing_zip_year,median_hh_income,float,USD of window end year,S13 B19013,ZCTA 2020,observed or crosswalked,acs_missing
-housing_zip_year,median_hh_income_moe,float,"USD of window end year, 90% margin of error",S13 B19013,ZCTA 2020,observed or crosswalked,acs_missing
-housing_zip_year,median_hh_income_real_2025,float,USD of BASE_YEAR (2025),S13 B19013 and S16 CPIAUCSL,ZCTA 2020,derived,acs_missing
-housing_zip_year,median_hh_income_real_2025_moe,float,"USD of BASE_YEAR (2025), 90% margin of error",S13 B19013 and S16 CPIAUCSL,ZCTA 2020,derived,acs_missing
+housing_zip_year,median_hh_income_moe,float,USD of window end year,S13 B19013,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,median_hh_income_real,float,USD of BASE_YEAR,S13 B19013 and S16 CPIAUCSL,ZCTA 2020,derived,acs_missing
+housing_zip_year,median_hh_income_real_moe,float,USD of BASE_YEAR,S13 B19013 and S16 CPIAUCSL,ZCTA 2020,derived,acs_missing
 housing_zip_year,housing_units,float,housing units (5-year average),S13 B25001,ZCTA 2020,observed or crosswalked,acs_missing
-housing_zip_year,housing_units_moe,float,"housing units (5-year average), 90% margin of error",S13 B25001,ZCTA 2020,observed or crosswalked,acs_missing
-housing_zip_year,vacant_units,float,housing units (5-year average),S13 B25002,ZCTA 2020,observed or crosswalked,acs_missing
-housing_zip_year,vacant_units_moe,float,"housing units (5-year average), 90% margin of error",S13 B25002,ZCTA 2020,observed or crosswalked,acs_missing
-housing_zip_year,vacancy_rate,float,share 0-1,S13 B25002,ZCTA 2020,derived,acs_missing
-housing_zip_year,vacancy_rate_moe,float,"share 0-1, 90% margin of error",S13 B25002,ZCTA 2020,derived,acs_missing
-housing_zip_year,acs_missing,integer,0-5 code (docs/schema.md section 7),ingest/housing.py,ZCTA 2020,derived,none
-housing_zip_year,candidate_spillover_source,integer,0 or 1 (Bay Area spillover-source screen),ingest/housing.py,ZCTA 2020,derived,none
-housing_zip_year,spillover_screen,string,"screen version, e.g. provisional_v0",ingest/housing.py,ZCTA 2020,derived,none
-wildfire_zip,zcta,string,5-digit code,S14 2020 ZCTA-to-county,ZCTA 2020,key,none
-wildfire_zip,geo_tier,string,core fringe region or excluded_east,docs/schema.md section 2,ZCTA 2020,derived,none
-wildfire_zip,county_fips_main,string,5-digit FIPS of largest land share,S14,county,derived,none
-wildfire_zip,hu2020,integer,"housing units, 2020 Census (HU100)",TIGERweb 2020 ZCTA layer,ZCTA 2020,observed,none
-wildfire_zip,cdi_avg_fire_risk_2018,float,"0-4 scale, calendar year 2018",S2 Fire Risk Scores,ZCTA 2020,crosswalked,cdi_risk_missing
-wildfire_zip,cdi_avg_fire_risk_2018_source,string,source label,S2 Fire Risk Scores,ZCTA 2020,derived,none
-wildfire_zip,cdi_avg_fire_risk_2018_vintage,string,vintage label,S2 Fire Risk Scores,ZCTA 2020,derived,none
-wildfire_zip,cdi_avg_fire_risk_2018_aggregation_method,string,aggregation label,S2 Fire Risk Scores,ZCTA 2020,derived,none
-wildfire_zip,cdi_avg_fire_risk_2018_pretreatment,integer,1 for a pre-treatment vintage,docs/wildfire_timeline.md section 2.2,ZCTA 2020,derived,none
-wildfire_zip,cdi_high_extreme_share_2018,float,"share 0-1, calendar year 2018",S2 Fire Risk Scores,ZCTA 2020,derived,cdi_risk_missing
-wildfire_zip,cdi_high_extreme_share_2018_source,string,source label,S2 Fire Risk Scores,ZCTA 2020,derived,none
-wildfire_zip,cdi_high_extreme_share_2018_vintage,string,vintage label,S2 Fire Risk Scores,ZCTA 2020,derived,none
-wildfire_zip,cdi_high_extreme_share_2018_aggregation_method,string,aggregation label,S2 Fire Risk Scores,ZCTA 2020,derived,none
-wildfire_zip,cdi_high_extreme_share_2018_pretreatment,integer,1 for a pre-treatment vintage,docs/wildfire_timeline.md section 2.2,ZCTA 2020,derived,none
-wildfire_zip,cdi_avg_fire_risk_2023,float,"0-4 scale, calendar year 2023",S2 Fire Risk Scores,ZCTA 2020,crosswalked,cdi_risk_missing
-wildfire_zip,cdi_avg_fire_risk_2023_source,string,source label,S2 Fire Risk Scores,ZCTA 2020,derived,none
-wildfire_zip,cdi_avg_fire_risk_2023_vintage,string,vintage label,S2 Fire Risk Scores,ZCTA 2020,derived,none
-wildfire_zip,cdi_avg_fire_risk_2023_aggregation_method,string,aggregation label,S2 Fire Risk Scores,ZCTA 2020,derived,none
-wildfire_zip,cdi_avg_fire_risk_2023_pretreatment,integer,1 for a pre-treatment vintage,docs/wildfire_timeline.md section 2.2,ZCTA 2020,derived,none
-wildfire_zip,cdi_high_extreme_share_2023,float,"share 0-1, calendar year 2023",S2 Fire Risk Scores,ZCTA 2020,derived,cdi_risk_missing
-wildfire_zip,cdi_high_extreme_share_2023_source,string,source label,S2 Fire Risk Scores,ZCTA 2020,derived,none
-wildfire_zip,cdi_high_extreme_share_2023_vintage,string,vintage label,S2 Fire Risk Scores,ZCTA 2020,derived,none
-wildfire_zip,cdi_high_extreme_share_2023_aggregation_method,string,aggregation label,S2 Fire Risk Scores,ZCTA 2020,derived,none
-wildfire_zip,cdi_high_extreme_share_2023_pretreatment,integer,1 for a pre-treatment vintage,docs/wildfire_timeline.md section 2.2,ZCTA 2020,derived,none
-wildfire_zip,cdi_risk_missing,integer,0 or 1 (1 when either vintage is blank),ingest/wildfire.py,ZCTA 2020,derived,none
-wildfire_zip,burned,integer,0 or 1: DINS destroyed or major damage in ZCTA (whole study period),CAL FIRE DINS,ZCTA 2020,derived,none
-wildfire_zip,burned_event_ids,string,event_id list separated by ;,event_register,ZCTA 2020,derived,none
-wildfire_zip,structures_destroyed,integer,structures,CAL FIRE DINS,ZCTA 2020,derived,none
-wildfire_zip,structures_major_damage,integer,structures,CAL FIRE DINS,ZCTA 2020,derived,none
-wildfire_zip,first_burn_date,string,ISO date (empty when never burned),CAL FIRE DINS and incident list,ZCTA 2020,derived,none
-wildfire_zip,spillover_candidate,integer,0 or 1: borders a ZCTA burned by another fire,TIGERweb adjacency and DINS,ZCTA 2020,derived,none
-wildfire_zip,spillover_event_ids,string,event_id list separated by ;,event_register,ZCTA 2020,derived,none
-wildfire_zip,moratorium_event_ids,string,event_id list separated by ;,CDI moratorium bulletins,ZCTA 2020,derived,none
-wildfire_zcta_year,zcta,string,5-digit code,ingest/keys.py,ZCTA 2020,key,none
-wildfire_zcta_year,year,integer,calendar year,build_panel.py from wildfire_zip and event_register,ZCTA 2020,key,none
-wildfire_zcta_year,policy_form,string,ALL,none,ZCTA 2020,key,none
-wildfire_zcta_year,cdi_risk_vintage_latest,integer,latest S2 vintage <= year,build_panel.py from wildfire_zip and event_register,ZCTA 2020,derived,wildfire_risk_missing
-wildfire_zcta_year,cdi_avg_fire_risk_latest,float,0-4 scale,build_panel.py from wildfire_zip and event_register,ZCTA 2020,crosswalked,wildfire_risk_missing
-wildfire_zcta_year,cdi_high_extreme_share_latest,float,share 0-1,build_panel.py from wildfire_zip and event_register,ZCTA 2020,derived,wildfire_risk_missing
-wildfire_zcta_year,fire_damage_in_year,integer,0 or 1,build_panel.py from wildfire_zip and event_register,ZCTA 2020,derived,wildfire_events_missing
-wildfire_zcta_year,burned_to_date,integer,0 or 1,build_panel.py from wildfire_zip and event_register,ZCTA 2020,derived,wildfire_events_missing
-wildfire_zcta_year,years_since_first_burn,integer,years,build_panel.py from wildfire_zip and event_register,ZCTA 2020,derived,wildfire_events_missing
-wildfire_zcta_year,x1_destruction_window,integer,0 or 1,build_panel.py from wildfire_zip and event_register,ZCTA 2020,derived,wildfire_events_missing
-wildfire_zcta_year,moratorium_active_in_year,integer,0 or 1,build_panel.py from wildfire_zip and event_register,ZCTA 2020,derived,wildfire_events_missing
-wildfire_zcta_year,moratoria_started_to_date,integer,count,build_panel.py from wildfire_zip and event_register,ZCTA 2020,derived,wildfire_events_missing
+housing_zip_year,housing_units_moe,float,housing units,S13 B25001,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,vacant_units,float,housing units (5-year average),S13 B25002 line 3,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,vacant_units_moe,float,housing units,S13 B25002 line 3,ZCTA 2020,observed or crosswalked,acs_missing
+housing_zip_year,vacancy_rate,float,share 0-1,S13 B25002 lines 3 and 1,ZCTA 2020,derived,acs_missing
+housing_zip_year,vacancy_rate_moe,float,share 0-1,S13 B25002 lines 3 and 1,ZCTA 2020,derived,acs_missing
+housing_zip_year,acs_missing,integer,missing code (schema.md section 7),ingest/housing.py,ZCTA 2020,derived,none
+housing_zip_year,candidate_spillover_source,integer,0 or 1,ingest/housing.py,ZCTA 2020,derived,none
+housing_zip_year,spillover_screen,string,screen version,ingest/housing.py,ZCTA 2020,derived,none
+acs_zcta,zcta,string,5-digit code,ingest/keys.py,ZCTA 2020,key,none
+acs_zcta,year,integer,last year of 5-year window,S13,ZCTA 2020,key,none
+acs_zcta,policy_form,string,ALL,none,ZCTA 2020,key,none
+acs_zcta,acs_window_start,integer,first year of 5-year window,S13,ZCTA 2020,observed,none
+acs_zcta,zcta_vintage,integer,2010 or 2020,S13,ZCTA,observed,none
+acs_zcta,median_value,float,USD of window end year,S13 B25077,ZCTA 2020,observed or crosswalked,acs_missing
+acs_zcta,median_value_moe,float,USD of window end year,S13 B25077,ZCTA 2020,observed or crosswalked,acs_missing
+acs_zcta,median_value_real,float,USD of BASE_YEAR,S13 and S16 CPIAUCSL,ZCTA 2020,derived,acs_missing
+acs_zcta,population,float,persons (5-year average),S13 B01003,ZCTA 2020,observed or crosswalked,acs_missing
+acs_zcta,population_moe,float,persons,S13 B01003,ZCTA 2020,observed or crosswalked,acs_missing
+acs_zcta,housing_units,float,housing units (5-year average),S13 B25001,ZCTA 2020,observed or crosswalked,acs_missing
+wildfire_zip,zcta,string,5-digit code,S14 2020 ZCTA-to-county file,ZCTA 2020,key,none
+wildfire_zip,geo_tier,string,core fringe excluded_east or region,docs/schema.md section 2,ZCTA 2020,derived,none
+wildfire_zip,county_fips_main,string,5-digit FIPS,S14 (largest land share),ZCTA 2020,derived,none
+wildfire_zip,hu2020,integer,housing units,2020 Census via TIGERweb HU100,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2018,float,0-4 scale,S2 Fire Risk Scores,ZCTA 2020,observed,cdi_risk_missing
+wildfire_zip,cdi_avg_fire_risk_2018_source,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2018_vintage,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2018_aggregation_method,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2018_pretreatment,integer,0 or 1,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2018,float,share 0-1,S2 Fire Risk Scores,ZCTA 2020,observed,cdi_risk_missing
+wildfire_zip,cdi_high_extreme_share_2018_source,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2018_vintage,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2018_aggregation_method,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2018_pretreatment,integer,0 or 1,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2023,float,0-4 scale,S2 Fire Risk Scores,ZCTA 2020,observed,cdi_risk_missing
+wildfire_zip,cdi_avg_fire_risk_2023_source,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2023_vintage,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2023_aggregation_method,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_avg_fire_risk_2023_pretreatment,integer,0 or 1,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2023,float,share 0-1,S2 Fire Risk Scores,ZCTA 2020,observed,cdi_risk_missing
+wildfire_zip,cdi_high_extreme_share_2023_source,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2023_vintage,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2023_aggregation_method,string,text label,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_high_extreme_share_2023_pretreatment,integer,0 or 1,S2 Fire Risk Scores,ZCTA 2020,observed,none
+wildfire_zip,cdi_risk_missing,integer,0 or 1,S2 Fire Risk Scores,ZCTA 2020,derived,none
+wildfire_zip,burned,integer,0 or 1,CAL FIRE DINS and TIGERweb 2020 ZCTA point query,ZCTA 2020,derived,none
+wildfire_zip,burned_event_ids,string,event_register event_id list separated by ;,CAL FIRE DINS and TIGERweb 2020 ZCTA point query,ZCTA 2020,derived,none
+wildfire_zip,structures_destroyed,integer,structure count,CAL FIRE DINS and TIGERweb 2020 ZCTA point query,ZCTA 2020,observed,none
+wildfire_zip,structures_major_damage,integer,structure count,CAL FIRE DINS and TIGERweb 2020 ZCTA point query,ZCTA 2020,observed,none
+wildfire_zip,first_burn_date,string,ISO date,CAL FIRE DINS and TIGERweb 2020 ZCTA point query and CAL FIRE incident list,ZCTA 2020,derived,none
+wildfire_zip,spillover_candidate,integer,0 or 1,TIGERweb esriSpatialRelTouches on 2020 ZCTA polygons and DINS,ZCTA 2020,derived,none
+wildfire_zip,spillover_event_ids,string,event_register event_id list separated by ;,TIGERweb esriSpatialRelTouches on 2020 ZCTA polygons and DINS,ZCTA 2020,derived,none
+wildfire_zip,moratorium_event_ids,string,event_register event_id list separated by ;,CDI SB 824 moratorium bulletins,ZCTA 2020,derived,none
+event_register,event_id,string,text identifier,ingest/wildfire.py,event,key,none
+event_register,event_type,string,fire insurer_withdrawal nonrenewal_moratorium rule_change or fair_plan_change,CAL FIRE DINS and events_curated.csv,event,observed,none
+event_register,date_start,string,ISO date,CAL FIRE incident list DINS and cited sources,event,observed,none
+event_register,date_end,string,ISO date or blank,CAL FIRE incident list and cited sources,event,observed,none
+event_register,date_uncertainty,string,day week month quarter or year,events_curated.csv and ingest/wildfire.py,event,observed,none
+event_register,geography,string,text label,CAL FIRE DINS and cited sources,event,observed,none
+event_register,zctas_affected,string,2020 ZCTA list separated by ;,DINS point query or bulletin ZIPs by identity,ZCTA 2020,derived,none
+event_register,source_url,string,URL,CAL FIRE and CDI pages,event,observed,none
+event_register,notes,string,free text,ingest/wildfire.py and events_curated.csv,event,observed,none
 xw_zip_zcta,zip,string,5-digit USPS ZIP,S14 identity or S15 HUD,USPS ZIP,observed,none
 xw_zip_zcta,zcta,string,5-digit code,S14 or S15 HUD and tract-ZCTA file,ZCTA 2020,observed,none
 xw_zip_zcta,weight,float,residential address share 0-1,S15 RES_RATIO (1.0 for identity),USPS ZIP to ZCTA 2020,derived,xw_incomplete
@@ -150,13 +158,13 @@ panel,schema_version,integer,version number,docs/schema.md,none,derived,none
 panel,admitted_homeowners__sources,string,source IDs separated by ;,insurance_zip_year (S2 HO and S3),ZCTA 2020,observed,admitted_homeowners__premium_missing
 panel,admitted_homeowners__exposures,float,earned house-years (S2 All Companies),insurance_zip_year (S2 HO and S3),ZCTA 2020,crosswalked,admitted_homeowners__premium_missing
 panel,admitted_homeowners__earned_premium,float,USD nominal,insurance_zip_year (S2 HO and S3),ZCTA 2020,crosswalked,admitted_homeowners__premium_missing
-panel,admitted_homeowners__earned_premium_real_2025,float,USD of 2025,insurance_zip_year (S2 HO and S3) and CPI-U,ZCTA 2020,derived,admitted_homeowners__premium_missing
+panel,admitted_homeowners__earned_premium_real,float,USD of 2025,insurance_zip_year (S2 HO and S3) and CPI-U,ZCTA 2020,derived,admitted_homeowners__premium_missing
 panel,admitted_homeowners__avg_premium_per_exposure,float,USD nominal per earned house-year,insurance_zip_year (S2 HO and S3),ZCTA 2020,derived,admitted_homeowners__premium_missing
-panel,admitted_homeowners__avg_premium_per_exposure_real_2025,float,USD of 2025 per earned house-year,insurance_zip_year (S2 HO and S3) and CPI-U,ZCTA 2020,derived,admitted_homeowners__premium_missing
+panel,admitted_homeowners__avg_premium_per_exposure_real,float,USD of 2025 per earned house-year,insurance_zip_year (S2 HO and S3) and CPI-U,ZCTA 2020,derived,admitted_homeowners__premium_missing
 panel,admitted_homeowners__avg_coverage_a,float,USD nominal,insurance_zip_year (S2 HO and S3),ZCTA 2020,crosswalked,admitted_homeowners__premium_missing
-panel,admitted_homeowners__avg_coverage_a_real_2025,float,USD of 2025,insurance_zip_year (S2 HO and S3) and CPI-U,ZCTA 2020,derived,admitted_homeowners__premium_missing
+panel,admitted_homeowners__avg_coverage_a_real,float,USD of 2025,insurance_zip_year (S2 HO and S3) and CPI-U,ZCTA 2020,derived,admitted_homeowners__premium_missing
 panel,admitted_homeowners__avg_coverage_c,float,USD nominal,insurance_zip_year (S2 HO and S3),ZCTA 2020,crosswalked,admitted_homeowners__premium_missing
-panel,admitted_homeowners__avg_coverage_c_real_2025,float,USD of 2025,insurance_zip_year (S2 HO and S3) and CPI-U,ZCTA 2020,derived,admitted_homeowners__premium_missing
+panel,admitted_homeowners__avg_coverage_c_real,float,USD of 2025,insurance_zip_year (S2 HO and S3) and CPI-U,ZCTA 2020,derived,admitted_homeowners__premium_missing
 panel,admitted_homeowners__coverage_basis,string,end_of_year (2018-2020) or start_of_year (2021+),insurance_zip_year (S2 HO and S3),ZCTA 2020,derived,admitted_homeowners__premium_missing
 panel,admitted_homeowners__premium_per_1000_coverage_a,float,USD premium per USD 1000 of Coverage A (same-year dollars),insurance_zip_year (S2 HO and S3),ZCTA 2020,derived,admitted_homeowners__premium_missing
 panel,admitted_homeowners__form_share_of_admitted,float,share 0-1 of S2 admitted earned exposure,insurance_zip_year (S2 HO and S3),ZCTA 2020,derived,admitted_homeowners__premium_missing
@@ -174,13 +182,13 @@ panel,admitted_homeowners__combined_premium_unavailable,integer,0 or 1,insurance
 panel,dwelling_fire__sources,string,source IDs separated by ;,insurance_zip_year (S2 DO and DT),ZCTA 2020,observed,dwelling_fire__premium_missing
 panel,dwelling_fire__exposures,float,earned house-years (S2 All Companies),insurance_zip_year (S2 DO and DT),ZCTA 2020,crosswalked,dwelling_fire__premium_missing
 panel,dwelling_fire__earned_premium,float,USD nominal,insurance_zip_year (S2 DO and DT),ZCTA 2020,crosswalked,dwelling_fire__premium_missing
-panel,dwelling_fire__earned_premium_real_2025,float,USD of 2025,insurance_zip_year (S2 DO and DT) and CPI-U,ZCTA 2020,derived,dwelling_fire__premium_missing
+panel,dwelling_fire__earned_premium_real,float,USD of 2025,insurance_zip_year (S2 DO and DT) and CPI-U,ZCTA 2020,derived,dwelling_fire__premium_missing
 panel,dwelling_fire__avg_premium_per_exposure,float,USD nominal per earned house-year,insurance_zip_year (S2 DO and DT),ZCTA 2020,derived,dwelling_fire__premium_missing
-panel,dwelling_fire__avg_premium_per_exposure_real_2025,float,USD of 2025 per earned house-year,insurance_zip_year (S2 DO and DT) and CPI-U,ZCTA 2020,derived,dwelling_fire__premium_missing
+panel,dwelling_fire__avg_premium_per_exposure_real,float,USD of 2025 per earned house-year,insurance_zip_year (S2 DO and DT) and CPI-U,ZCTA 2020,derived,dwelling_fire__premium_missing
 panel,dwelling_fire__avg_coverage_a,float,USD nominal,insurance_zip_year (S2 DO and DT),ZCTA 2020,crosswalked,dwelling_fire__premium_missing
-panel,dwelling_fire__avg_coverage_a_real_2025,float,USD of 2025,insurance_zip_year (S2 DO and DT) and CPI-U,ZCTA 2020,derived,dwelling_fire__premium_missing
+panel,dwelling_fire__avg_coverage_a_real,float,USD of 2025,insurance_zip_year (S2 DO and DT) and CPI-U,ZCTA 2020,derived,dwelling_fire__premium_missing
 panel,dwelling_fire__avg_coverage_c,float,USD nominal,insurance_zip_year (S2 DO and DT),ZCTA 2020,crosswalked,dwelling_fire__premium_missing
-panel,dwelling_fire__avg_coverage_c_real_2025,float,USD of 2025,insurance_zip_year (S2 DO and DT) and CPI-U,ZCTA 2020,derived,dwelling_fire__premium_missing
+panel,dwelling_fire__avg_coverage_c_real,float,USD of 2025,insurance_zip_year (S2 DO and DT) and CPI-U,ZCTA 2020,derived,dwelling_fire__premium_missing
 panel,dwelling_fire__coverage_basis,string,end_of_year (2018-2020) or start_of_year (2021+),insurance_zip_year (S2 DO and DT),ZCTA 2020,derived,dwelling_fire__premium_missing
 panel,dwelling_fire__premium_per_1000_coverage_a,float,USD premium per USD 1000 of Coverage A (same-year dollars),insurance_zip_year (S2 DO and DT),ZCTA 2020,derived,dwelling_fire__premium_missing
 panel,dwelling_fire__form_share_of_admitted,float,share 0-1 of S2 admitted earned exposure,insurance_zip_year (S2 DO and DT),ZCTA 2020,derived,dwelling_fire__premium_missing
@@ -201,8 +209,8 @@ panel,dwelling_fire__premium_missing_reason,string,code text and cause,build_pan
 panel,fair_plan__share_missing,integer,0-5 code (docs/schema.md section 7),build_panel.py (S6 coverage),ZCTA 2020,derived,none
 panel,fair_plan__share_missing_reason,string,code text and cause,build_panel.py (S6 coverage),ZCTA 2020,derived,none
 panel,zhvi_months,integer,months with ZHVI in year,housing_zip_year (S11),ZCTA 2020,derived,zhvi_missing
-panel,zhvi_nominal,float,USD nominal (calendar-year mean of 10+ months),housing_zip_year (S11),ZCTA 2020,crosswalked,zhvi_missing
-panel,zhvi_real_2025,float,USD of 2025,housing_zip_year (S11 and CPI-U),ZCTA 2020,derived,zhvi_missing
+panel,zhvi,float,USD nominal (calendar-year mean of 10+ months),housing_zip_year (S11),ZCTA 2020,crosswalked,zhvi_missing
+panel,zhvi_real,float,USD of 2025,housing_zip_year (S11 and CPI-U),ZCTA 2020,derived,zhvi_missing
 panel,zhvi_missing,integer,0-5 code (docs/schema.md section 7),housing_zip_year zhvi_missing and build_panel.py,ZCTA 2020,derived,none
 panel,zhvi_missing_reason,string,code text and cause,housing_zip_year zhvi_missing and build_panel.py,ZCTA 2020,derived,none
 panel,acs_window,string,"5-year window, e.g. 2020-2024",housing_zip_year (S13),ZCTA 2020,observed,acs_missing
@@ -214,8 +222,8 @@ panel,acs5_households,float,households (5-year average),housing_zip_year (S13 B1
 panel,acs5_households_moe,float,"households (5-year average), 90% margin of error",housing_zip_year (S13 B11001),ZCTA 2020,observed,acs_missing
 panel,acs5_median_hh_income,float,USD of window end year,housing_zip_year (S13 B19013),ZCTA 2020,observed,acs_missing
 panel,acs5_median_hh_income_moe,float,"USD of window end year, 90% margin of error",housing_zip_year (S13 B19013),ZCTA 2020,observed,acs_missing
-panel,acs5_median_hh_income_real_2025,float,USD of 2025,housing_zip_year (S13 B19013 and CPI-U),ZCTA 2020,derived,acs_missing
-panel,acs5_median_hh_income_real_2025_moe,float,"USD of 2025, 90% margin of error",housing_zip_year (S13 B19013 and CPI-U),ZCTA 2020,derived,acs_missing
+panel,acs5_median_hh_income_real,float,USD of 2025,housing_zip_year (S13 B19013 and CPI-U),ZCTA 2020,derived,acs_missing
+panel,acs5_median_hh_income_real_moe,float,"USD of 2025, 90% margin of error",housing_zip_year (S13 B19013 and CPI-U),ZCTA 2020,derived,acs_missing
 panel,acs5_housing_units,float,housing units (5-year average),housing_zip_year (S13 B25001),ZCTA 2020,observed,acs_missing
 panel,acs5_housing_units_moe,float,"housing units (5-year average), 90% margin of error",housing_zip_year (S13 B25001),ZCTA 2020,observed,acs_missing
 panel,acs5_vacant_units,float,housing units (5-year average),housing_zip_year (S13 B25002),ZCTA 2020,observed,acs_missing
@@ -240,13 +248,13 @@ panel,moratoria_started_to_date,integer,count of moratoria listing the ZCTA that
 panel,wildfire_events_missing,integer,0-5 code (docs/schema.md section 7),build_panel.py,ZCTA 2020,derived,none
 panel,wildfire_events_missing_reason,string,code text and cause,build_panel.py,ZCTA 2020,derived,none
 panel,county_population,float,persons at 1 July,ca_county_panel (S17),county,county_control,controls_missing
-panel,county_income_pc_real_2025,float,USD of 2025,ca_county_panel (S16 PCPI) and CPI-U,county,county_control,controls_missing
+panel,county_income_pc_real,float,USD of 2025,ca_county_panel (S16 PCPI) and CPI-U,county,county_control,controls_missing
 panel,county_permits,float,private housing units authorized,ca_county_panel (S16 BPPRIV),county,county_control,controls_missing
 panel,controls_missing,integer,0-5 code (docs/schema.md section 7),build_panel.py,county,derived,none
 panel,controls_missing_reason,string,code text and cause,build_panel.py,county,derived,none
-panel,jump_flag__zhvi_real_2025,integer,0 or 1: abs log change vs year-1 above 0.25,build_panel.py,ZCTA 2020,derived,none
-panel,jump_flag__admitted_homeowners__avg_premium_per_exposure_real_2025,integer,0 or 1: abs log change vs year-1 above 0.4,build_panel.py,ZCTA 2020,derived,none
-panel,jump_flag__dwelling_fire__avg_premium_per_exposure_real_2025,integer,0 or 1: abs log change vs year-1 above 0.4,build_panel.py,ZCTA 2020,derived,none
+panel,jump_flag__zhvi_real,integer,0 or 1: abs log change vs year-1 above 0.25,build_panel.py,ZCTA 2020,derived,none
+panel,jump_flag__admitted_homeowners__avg_premium_per_exposure_real,integer,0 or 1: abs log change vs year-1 above 0.4,build_panel.py,ZCTA 2020,derived,none
+panel,jump_flag__dwelling_fire__avg_premium_per_exposure_real,integer,0 or 1: abs log change vs year-1 above 0.4,build_panel.py,ZCTA 2020,derived,none
 panel,jump_flag__admitted_homeowners__nonrenewal_rate,integer,0 or 1: abs diff change vs year-1 above 0.1,build_panel.py,ZCTA 2020,derived,none
 panel,jump_flag__county_population,integer,0 or 1: abs log change vs year-1 above 0.1,build_panel.py,ZCTA 2020,derived,none
 panel,jump_flag_any,integer,0 or 1,build_panel.py,ZCTA 2020,derived,none

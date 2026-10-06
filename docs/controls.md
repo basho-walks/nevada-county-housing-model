@@ -32,12 +32,13 @@ unmatched file.
 - Geography: Zillow ZIP to 2020 ZCTA by identity (`zcta_method = identity`, schema section 4.1).
 - Streaming: the 124 MB national file is read line by line and only `State == CA` rows are written.
   The California snapshot is not committed (Zillow terms allow derived works only). Its hash is
-  in the manifest.
+  in the manifest, so `verify_manifest(RAW)` on a fresh clone always lists that file until
+  `ingest/housing.py` downloads it again.
 - Monthly to annual: calendar-year mean, kept only when the year has 10 or more months. This is
   the `annual_mean` rule in `fetch_data.py`. `zhvi_months` gives the month count, and `zhvi_rule
-  = mean_ge10m` marks the rule. A year with 1-9 months has `zhvi_nominal` empty and
+  = mean_ge10m` marks the rule. A year with 1-9 months has `zhvi` empty and
   `zhvi_missing = 5`. 2026 has 8 months, so it is excluded.
-- Units: `zhvi_nominal` is nominal US dollars. `zhvi_real_2025` is 2025 dollars:
+- Units: `zhvi` is nominal US dollars. `zhvi_real` is in `BASE_YEAR` (2025) dollars:
   `nominal * CPI[2025] / CPI[year]`, with CPI-U from `data/national_annual.csv`. `BASE_YEAR` in
   `ingest/housing.py` must equal `BASE_YEAR` in `model.py`. A test checks this.
 
@@ -48,7 +49,7 @@ unmatched file.
 | `population` | B01003 | persons, 5-year average |
 | `households` | B11001 | households, 5-year average |
 | `median_hh_income` | B19013 | US dollars of the window end year |
-| `median_hh_income_real_2025` | B19013 and CPI-U | 2025 dollars |
+| `median_hh_income_real` | B19013 and CPI-U | `BASE_YEAR` (2025) dollars |
 | `housing_units` | B25001 | housing units |
 | `vacant_units` | B25002 line 3 | housing units |
 | `vacancy_rate` | B25002 lines 3 and 1 | share 0-1 |
@@ -141,6 +142,3 @@ Confirm it in `docs/sources.md` before you use one of them.
   this.
 - County series stay in county tables. If a later issue joins them to the ZCTA panel, they get
   a `county_` prefix and `lineage = county_control` (`docs/schema.md` section 4.5).
-- Column names: this table uses `zhvi_nominal` and `zhvi_real_2025`. `docs/data_dictionary.csv`
-  (issue #2) uses `zhvi` and `zhvi_real` for the same values. Align the dictionary when PR #16
-  merges.
