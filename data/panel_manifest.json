@@ -1,14 +1,14 @@
 {
-  "panel_version": "s1-448e51e11715-076b4e5736cd",
+  "panel_version": "s1-8c0157b10d02-d73d2bb7cf6b",
   "schema_version": 1,
-  "git_sha": "448e51e117150e473a25e0a0bf4061d0939497cc",
-  "git_dirty": false,
-  "input_hash": "076b4e5736cdd46109f9a430953ba5d124f23fe2a7f6564349ed27b4165c2e75",
+  "git_sha": "8c0157b10d02229a1d58c9161afacd3596052893",
+  "git_dirty": true,
+  "input_hash": "d73d2bb7cf6b88d4b2ea6d1b1ccbc2337e38b1a6c1cec8ce7219683ac9ce3924",
   "build_command": "uv run python build_panel.py",
   "base_year": 2025,
   "output": {
     "path": "data/panel_zip_year.csv",
-    "sha256": "71ebe963d298070ee9e0a7088919a4bb3c30c94b42953275dd7e833753df63f0",
+    "sha256": "c4e1a338e494f2b6f164217050f35da13bcca97438c8f302b6087c4846d686d9",
     "rows": 6696,
     "columns": 112,
     "zctas": 248,
@@ -34,7 +34,7 @@
   },
   "inputs": {
     "data/insurance_zip_year.csv": {
-      "sha256": "294c197dd9200a5211abcd0b15c36afcdcbf6aa1a2888987b8b6bf8e8cf71ef7",
+      "sha256": "30369e8b7de4b517afc98460dc02c19c530e84c9a433c35aca36b9acc04de13f",
       "rows": 144,
       "produced_by": "uv run python -m ingest.insurance",
       "raw_manifest": {
@@ -42,7 +42,7 @@
       }
     },
     "data/housing_zip_year.csv": {
-      "sha256": "4db8d5c4c95f6bb80e8d1396af30208971e01f4a720cbf6e144716c2c2734149",
+      "sha256": "42e839ef54586f9ef49bc5ddaa79d39edea72a6e4282bf8015724bb397f38550",
       "rows": 39400,
       "produced_by": "uv run python -m ingest.housing",
       "raw_manifest": {
@@ -94,7 +94,7 @@
       "produced_by": "uv run python -m ingest.insurance"
     },
     "data/interim/unmatched/housing_zip_year.csv": {
-      "sha256": "d3efbfc1f4a9bd6a0e706aaa587965a6a3b05d600562cd8f9494ea1c2a4e2c3e",
+      "sha256": "d6bb2a6e8f711d96901fc99fc43d3bf259767cd501458ba83c695611fcd1b38e",
       "rows": 47,
       "produced_by": "uv run python -m ingest.housing"
     },
@@ -130,21 +130,21 @@
   "imputation": "none: missing values stay missing; no fill, carry-forward or interpolation",
   "acs_alignment": "ACS 5-year values sit only on the window end year; never repeated on other years",
   "complete_case_columns": [
-    "zhvi_real_2025",
-    "admitted_homeowners__avg_premium_per_exposure_real_2025",
+    "zhvi_real",
+    "admitted_homeowners__avg_premium_per_exposure_real",
     "admitted_homeowners__nonrenewal_rate",
     "cdi_avg_fire_risk_latest"
   ],
   "jump_thresholds": {
-    "zhvi_real_2025": {
+    "zhvi_real": {
       "kind": "abs_log",
       "limit": 0.25
     },
-    "admitted_homeowners__avg_premium_per_exposure_real_2025": {
+    "admitted_homeowners__avg_premium_per_exposure_real": {
       "kind": "abs_log",
       "limit": 0.4
     },
-    "dwelling_fire__avg_premium_per_exposure_real_2025": {
+    "dwelling_fire__avg_premium_per_exposure_real": {
       "kind": "abs_log",
       "limit": 0.4
     },
@@ -169,13 +169,13 @@
     "admitted_homeowners__sources": "same_year",
     "admitted_homeowners__exposures": "same_year",
     "admitted_homeowners__earned_premium": "same_year",
-    "admitted_homeowners__earned_premium_real_2025": "same_year",
+    "admitted_homeowners__earned_premium_real": "same_year",
     "admitted_homeowners__avg_premium_per_exposure": "same_year",
-    "admitted_homeowners__avg_premium_per_exposure_real_2025": "same_year",
+    "admitted_homeowners__avg_premium_per_exposure_real": "same_year",
     "admitted_homeowners__avg_coverage_a": "same_year",
-    "admitted_homeowners__avg_coverage_a_real_2025": "same_year",
+    "admitted_homeowners__avg_coverage_a_real": "same_year",
     "admitted_homeowners__avg_coverage_c": "same_year",
-    "admitted_homeowners__avg_coverage_c_real_2025": "same_year",
+    "admitted_homeowners__avg_coverage_c_real": "same_year",
     "admitted_homeowners__coverage_basis": "same_year",
     "admitted_homeowners__premium_per_1000_coverage_a": "same_year",
     "admitted_homeowners__form_share_of_admitted": "same_year",
@@ -193,13 +193,13 @@
     "dwelling_fire__sources": "same_year",
     "dwelling_fire__exposures": "same_year",
     "dwelling_fire__earned_premium": "same_year",
-    "dwelling_fire__earned_premium_real_2025": "same_year",
+    "dwelling_fire__earned_premium_real": "same_year",
     "dwelling_fire__avg_premium_per_exposure": "same_year",
-    "dwelling_fire__avg_premium_per_exposure_real_2025": "same_year",
+    "dwelling_fire__avg_premium_per_exposure_real": "same_year",
     "dwelling_fire__avg_coverage_a": "same_year",
-    "dwelling_fire__avg_coverage_a_real_2025": "same_year",
+    "dwelling_fire__avg_coverage_a_real": "same_year",
     "dwelling_fire__avg_coverage_c": "same_year",
-    "dwelling_fire__avg_coverage_c_real_2025": "same_year",
+    "dwelling_fire__avg_coverage_c_real": "same_year",
     "dwelling_fire__coverage_basis": "same_year",
     "dwelling_fire__premium_per_1000_coverage_a": "same_year",
     "dwelling_fire__form_share_of_admitted": "same_year",
@@ -220,8 +220,8 @@
     "fair_plan__share_missing": "same_year",
     "fair_plan__share_missing_reason": "same_year",
     "zhvi_months": "same_year",
-    "zhvi_nominal": "same_year",
-    "zhvi_real_2025": "same_year",
+    "zhvi": "same_year",
+    "zhvi_real": "same_year",
     "zhvi_missing": "same_year",
     "zhvi_missing_reason": "same_year",
     "acs_window": "acs_window_ending_in_year",
@@ -233,8 +233,8 @@
     "acs5_households_moe": "acs_window_ending_in_year",
     "acs5_median_hh_income": "acs_window_ending_in_year",
     "acs5_median_hh_income_moe": "acs_window_ending_in_year",
-    "acs5_median_hh_income_real_2025": "acs_window_ending_in_year",
-    "acs5_median_hh_income_real_2025_moe": "acs_window_ending_in_year",
+    "acs5_median_hh_income_real": "acs_window_ending_in_year",
+    "acs5_median_hh_income_real_moe": "acs_window_ending_in_year",
     "acs5_housing_units": "acs_window_ending_in_year",
     "acs5_housing_units_moe": "acs_window_ending_in_year",
     "acs5_vacant_units": "acs_window_ending_in_year",
@@ -259,13 +259,13 @@
     "wildfire_events_missing": "same_year",
     "wildfire_events_missing_reason": "same_year",
     "county_population": "same_year",
-    "county_income_pc_real_2025": "same_year",
+    "county_income_pc_real": "same_year",
     "county_permits": "same_year",
     "controls_missing": "same_year",
     "controls_missing_reason": "same_year",
-    "jump_flag__zhvi_real_2025": "backward_difference",
-    "jump_flag__admitted_homeowners__avg_premium_per_exposure_real_2025": "backward_difference",
-    "jump_flag__dwelling_fire__avg_premium_per_exposure_real_2025": "backward_difference",
+    "jump_flag__zhvi_real": "backward_difference",
+    "jump_flag__admitted_homeowners__avg_premium_per_exposure_real": "backward_difference",
+    "jump_flag__dwelling_fire__avg_premium_per_exposure_real": "backward_difference",
     "jump_flag__admitted_homeowners__nonrenewal_rate": "backward_difference",
     "jump_flag__county_population": "backward_difference",
     "jump_flag_any": "backward_difference",
